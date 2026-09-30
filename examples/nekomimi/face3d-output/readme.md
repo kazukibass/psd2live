@@ -1,6 +1,6 @@
 # face3d-output — 顔パーツだけ 3D の頭で動かしたモデル
 
-`moc3-cmo3-output/` と同じ PSD から作った別版。頭の向き（`ParamAngleX` / `ParamAngleY`）で、顔パーツ（顔の土台・白目・瞳・まつ毛・眉・鼻・口）だけを `tools/fit3d_head.py` の人の頭らしい 3D の頭（楕円体）で動かす。前髪・後ろ髪・耳は psd2live 標準の動きのまま。
+`moc3-cmo3-output/` と同じ PSD から作った別版。頭の向き（`ParamAngleX` / `ParamAngleY`）で、頭のパーツすべて（顔・白目・瞳・まつ毛・眉・鼻・口・前髪・後ろ髪・耳）を `tools/fit3d_head.py` の人の頭らしい 3D の頭（楕円体）で一体に動かす。
 
 | キー | 回転 |
 | --- | --- |
@@ -11,9 +11,12 @@
 作り方:
 
 ```bash
-(cd tools && python3 export_face3d.py <標準リグの geometry.json> ../reference/face_region/head3d_fit.json /tmp/face3d_disp.json)
+(cd tools && python3 fit_full_head.py ../reference/face_region/drawn_by_hand.jpg <標準リグの geometry.json> \
+  ../reference/face_region/head3d_fit.json ../reference/angles-9dir.png /tmp/face3d_disp.json --no-correction --no-placement)
 tools/headless/build/install/psd2live-headless/bin/psd2live-headless --input psd-input/nekomimi.psd \
   --output face3d-output --atlas 4096 --mesh-spacing 40 --retarget-vertices /tmp/face3d_disp.json --render face3d-output/preview
 ```
 
-`preview/` は姿勢シート、`harness_report.json` はハーネスの結果（顔の伸び縮みは 3D の回り込みとして基準より大きく、髪と耳のずれは psd2live 標準の動きから来るもの）。
+`preview/` は姿勢シート、`compare_9dir.png` は参考シート（上）との比較、`harness_report.json` はハーネスの結果（顔の伸び縮みは 3D の回り込みとして基準より大きい）。
+
+`fit_full_head.py` の 2D 補正（手描きの顔領域へ輪郭と中心線を寄せる）と、首輪基準の頭の位置合わせは、試したが採用していない。補正は髪と目を裂き、位置合わせは頭を首から最大約 200px 離した。

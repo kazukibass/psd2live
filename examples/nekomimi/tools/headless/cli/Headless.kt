@@ -57,6 +57,8 @@ fun main(args: Array<String>) {
 		)
 		val closedMouth = nine.map { (k, v) -> k to (v + ("ParamMouthOpenY" to 0f)) }
 		io.github.psd2live.ui.PoseSheet.render(model, closedMouth, intArrayOf(225, -30, 1350, 900), 512, java.io.File(dir, "poses_head.png"))
+		// same scale and framing as the front cell of reference/angles-9dir.png (87 px between the eyes)
+		io.github.psd2live.ui.PoseSheet.render(model, closedMouth, intArrayOf(199, 90, 1407, 937), 512, java.io.File(dir, "poses_head_sheetscale.png"))
 		io.github.psd2live.ui.PoseSheet.render(model, face, intArrayOf(650, 350, 500, 450), 512, java.io.File(dir, "poses_face.png"))
 		io.github.psd2live.ui.PoseSheet.render(model, listOf("front" to mapOf("ParamMouthOpenY" to 0f), "body X" to mapOf("ParamBodyAngleX" to 10f, "ParamMouthOpenY" to 0f), "turn" to mapOf("ParamAngleX" to 30f, "ParamBodyAngleX" to 10f, "ParamMouthOpenY" to 0f)), intArrayOf(100, 0, 1600, 1600), 512, java.io.File(dir, "poses_body.png"))
 	}

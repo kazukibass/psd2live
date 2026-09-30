@@ -12,10 +12,15 @@
    "ArtMeshEyelashR: area ratio 0.497..0.8",
    "ArtMeshIridesR: stretch p95 1.509 > 1.45",
    "ArtMeshEyebrowR: stretch p95 1.566 > 1.45",
-   "eye R: aspect changed 50%",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 54px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 50px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 3.055 > 1.6",
+   "ArtMeshFrontHair: stretch max 346.993 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.413..1.437",
+   "ArtMeshFrontHair: 7 flipped triangles",
+   "ArtMeshBackHair: stretch p95 3.047 > 1.6",
+   "ArtMeshBackHair: stretch max 491.538 > 3.0",
+   "ArtMeshBackHair: area ratio 0.473..1.428",
+   "ArtMeshBackHair: 50 flipped triangles",
+   "eye R: aspect changed 50%"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -99,49 +104,51 @@
     "nonaffine": 0.0026
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.384,
-    "aniso_max": 1.385,
-    "area_p5": 0.723,
-    "area_p95": 1.281,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 3.055,
+    "aniso_max": 346.993,
+    "area_p5": 0.413,
+    "area_p95": 1.437,
+    "flips": 7,
+    "nonaffine": 0.0275
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.016,
-    "aniso_max": 1.046,
-    "area_p5": 0.988,
-    "area_p95": 1.011,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 3.047,
+    "aniso_max": 491.538,
+    "area_p5": 0.473,
+    "area_p95": 1.428,
+    "flips": 50,
+    "nonaffine": 0.0214
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.098,
-    "aniso_max": 1.099,
-    "area_p5": 1.05,
-    "area_p95": 1.09,
+    "aniso_p95": 1.097,
+    "aniso_max": 1.11,
+    "area_p5": 0.911,
+    "area_p95": 0.913,
     "flips": 0,
-    "nonaffine": 0.0011
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.401,
-    "aniso_max": 1.404,
-    "area_p5": 0.702,
-    "area_p95": 0.75,
+    "aniso_p95": 1.097,
+    "aniso_max": 1.099,
+    "area_p5": 0.911,
+    "area_p95": 0.913,
     "flips": 0,
-    "nonaffine": 0.0013
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.785,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.1,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 53.5,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 50.4
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 2.6,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.3,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.4
   }
  },
  "x+0_y+30": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.463 > 1.45",
-   "ArtMeshEarsL drifts 29px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.68 > 1.6",
+   "ArtMeshFrontHair: stretch max 3.136 > 3.0",
+   "ArtMeshBackHair: stretch p95 1.917 > 1.6",
+   "ArtMeshBackHair: stretch max 32.625 > 3.0"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -225,41 +232,41 @@
     "nonaffine": 0.0015
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.004,
-    "aniso_max": 1.004,
-    "area_p5": 0.996,
-    "area_p95": 1.004,
+    "aniso_p95": 1.68,
+    "aniso_max": 3.136,
+    "area_p5": 0.74,
+    "area_p95": 1.193,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.016
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.005,
-    "aniso_max": 1.031,
-    "area_p5": 0.996,
-    "area_p95": 1.003,
+    "aniso_p95": 1.917,
+    "aniso_max": 32.625,
+    "area_p5": 0.743,
+    "area_p95": 1.241,
     "flips": 0,
-    "nonaffine": 0.0002
+    "nonaffine": 0.0125
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.042,
-    "aniso_max": 1.043,
-    "area_p5": 0.983,
-    "area_p95": 1.012,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.037,
+    "area_p5": 0.97,
+    "area_p95": 0.972,
     "flips": 0,
-    "nonaffine": 0.001
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.043,
-    "aniso_max": 1.046,
-    "area_p5": 0.982,
-    "area_p95": 1.012,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.031,
+    "area_p5": 0.97,
+    "area_p95": 0.972,
     "flips": 0,
-    "nonaffine": 0.0011
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.877,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 9.1,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 29.5,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 30.0
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.7,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.2
   }
  },
  "x+45_y+30": {
@@ -278,10 +285,15 @@
    "ArtMeshIridesL: stretch p95 1.585 > 1.45",
    "ArtMeshEyebrowL: stretch p95 1.938 > 1.45",
    "ArtMeshEyebrowL: area ratio 0.521..0.661",
-   "eye L: aspect changed 66%",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 50px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 58px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 3.413 > 1.6",
+   "ArtMeshFrontHair: stretch max 132.659 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.375..1.415",
+   "ArtMeshFrontHair: 5 flipped triangles",
+   "ArtMeshBackHair: stretch p95 2.799 > 1.6",
+   "ArtMeshBackHair: stretch max 549.112 > 3.0",
+   "ArtMeshBackHair: area ratio 0.512..1.406",
+   "ArtMeshBackHair: 43 flipped triangles",
+   "eye L: aspect changed 66%"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -365,41 +377,41 @@
     "nonaffine": 0.0028
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.384,
-    "aniso_max": 1.385,
-    "area_p5": 0.723,
-    "area_p95": 1.281,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 3.413,
+    "aniso_max": 132.659,
+    "area_p5": 0.375,
+    "area_p95": 1.415,
+    "flips": 5,
+    "nonaffine": 0.0284
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.016,
-    "aniso_max": 1.062,
-    "area_p5": 0.987,
-    "area_p95": 1.011,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 2.799,
+    "aniso_max": 549.112,
+    "area_p5": 0.512,
+    "area_p95": 1.406,
+    "flips": 43,
+    "nonaffine": 0.0221
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.398,
-    "aniso_max": 1.407,
-    "area_p5": 0.704,
-    "area_p95": 0.75,
+    "aniso_p95": 1.105,
+    "aniso_max": 1.107,
+    "area_p5": 0.905,
+    "area_p95": 0.907,
     "flips": 0,
-    "nonaffine": 0.0012
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.099,
-    "aniso_max": 1.101,
-    "area_p5": 1.051,
-    "area_p95": 1.092,
+    "aniso_p95": 1.105,
+    "aniso_max": 1.107,
+    "area_p5": 0.905,
+    "area_p95": 0.906,
     "flips": 0,
-    "nonaffine": 0.0012
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.579,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.0,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 49.7,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 58.3
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 3.4,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.5,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.4
   }
  },
  "x-45_y+0": {
@@ -411,10 +423,15 @@
    "ArtMeshEyewhiteR: stretch p95 1.704 > 1.45",
    "ArtMeshEyelashR: stretch p95 1.841 > 1.45",
    "ArtMeshEyelashR: area ratio 0.545..0.841",
-   "eye R: aspect changed 40%",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 46px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 38px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 2.486 > 1.6",
+   "ArtMeshFrontHair: stretch max 87.859 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.535..1.333",
+   "ArtMeshFrontHair: 2 flipped triangles",
+   "ArtMeshBackHair: stretch p95 2.436 > 1.6",
+   "ArtMeshBackHair: stretch max 208.897 > 3.0",
+   "ArtMeshBackHair: area ratio 0.543..1.319",
+   "ArtMeshBackHair: 35 flipped triangles",
+   "eye R: aspect changed 40%"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -498,41 +515,41 @@
     "nonaffine": 0.0022
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.379,
-    "aniso_max": 1.38,
-    "area_p5": 0.725,
-    "area_p95": 1.277,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 2.486,
+    "aniso_max": 87.859,
+    "area_p5": 0.535,
+    "area_p95": 1.333,
+    "flips": 2,
+    "nonaffine": 0.0229
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.014,
-    "aniso_max": 1.035,
-    "area_p5": 0.989,
-    "area_p95": 1.01,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 2.436,
+    "aniso_max": 208.897,
+    "area_p5": 0.543,
+    "area_p95": 1.319,
+    "flips": 35,
+    "nonaffine": 0.0179
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.077,
-    "aniso_max": 1.078,
-    "area_p5": 1.06,
-    "area_p95": 1.077,
+    "aniso_p95": 1.065,
+    "aniso_max": 1.067,
+    "area_p5": 0.939,
+    "area_p95": 0.94,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.398,
-    "aniso_max": 1.401,
-    "area_p5": 0.715,
-    "area_p95": 0.742,
+    "aniso_p95": 1.065,
+    "aniso_max": 1.068,
+    "area_p5": 0.939,
+    "area_p95": 0.94,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.727,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 80.6,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 46.4,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 38.3
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 2.3,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.2,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.2
   }
  },
  "x+45_y+0": {
@@ -546,11 +563,16 @@
    "ArtMeshEyelashL: area ratio 0.509..0.819",
    "ArtMeshIridesL: stretch p95 1.465 > 1.45",
    "ArtMeshEyebrowL: stretch p95 1.644 > 1.45",
+   "ArtMeshFrontHair: stretch p95 2.714 > 1.6",
+   "ArtMeshFrontHair: stretch max 96.49 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.519..1.359",
+   "ArtMeshFrontHair: 4 flipped triangles",
+   "ArtMeshBackHair: stretch p95 2.532 > 1.6",
+   "ArtMeshBackHair: stretch max 178.809 > 3.0",
+   "ArtMeshBackHair: area ratio 0.536..1.362",
+   "ArtMeshBackHair: 42 flipped triangles",
    "eye L: aspect changed 45%",
-   "eyes: size ratio 0.49 < 0.55",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 39px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 53px from ArtMeshFrontHair"
+   "eyes: size ratio 0.49 < 0.55"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -634,41 +656,41 @@
     "nonaffine": 0.0024
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.379,
-    "aniso_max": 1.379,
-    "area_p5": 0.725,
-    "area_p95": 1.277,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 2.714,
+    "aniso_max": 96.49,
+    "area_p5": 0.519,
+    "area_p95": 1.359,
+    "flips": 4,
+    "nonaffine": 0.0242
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.014,
-    "aniso_max": 1.062,
-    "area_p5": 0.989,
-    "area_p95": 1.011,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 2.532,
+    "aniso_max": 178.809,
+    "area_p5": 0.536,
+    "area_p95": 1.362,
+    "flips": 42,
+    "nonaffine": 0.0188
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.394,
-    "aniso_max": 1.399,
-    "area_p5": 0.717,
-    "area_p95": 0.743,
+    "aniso_p95": 1.073,
+    "aniso_max": 1.074,
+    "area_p5": 0.932,
+    "area_p95": 0.933,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.079,
-    "aniso_max": 1.081,
-    "area_p5": 1.063,
-    "area_p95": 1.079,
+    "aniso_p95": 1.073,
+    "aniso_max": 1.074,
+    "area_p5": 0.932,
+    "area_p95": 0.933,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.494,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 80.6,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 38.7,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 52.7
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 2.9,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.2,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.2
   }
  },
  "x-45_y-30": {
@@ -682,10 +704,15 @@
    "ArtMeshEyelashR: stretch max 2.288 > 2.2",
    "ArtMeshIridesR: stretch p95 1.525 > 1.45",
    "ArtMeshEyebrowR: stretch p95 1.453 > 1.45",
-   "eye R: aspect changed 72%",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 54px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 51px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 3.13 > 1.6",
+   "ArtMeshFrontHair: stretch max 79.806 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.43..1.406",
+   "ArtMeshFrontHair: 4 flipped triangles",
+   "ArtMeshBackHair: stretch p95 2.973 > 1.6",
+   "ArtMeshBackHair: stretch max 642.791 > 3.0",
+   "ArtMeshBackHair: area ratio 0.469..1.318",
+   "ArtMeshBackHair: 45 flipped triangles",
+   "eye R: aspect changed 72%"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -769,49 +796,52 @@
     "nonaffine": 0.0027
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.384,
-    "aniso_max": 1.385,
-    "area_p5": 0.723,
-    "area_p95": 1.281,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 3.13,
+    "aniso_max": 79.806,
+    "area_p5": 0.43,
+    "area_p95": 1.406,
+    "flips": 4,
+    "nonaffine": 0.0278
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.016,
-    "aniso_max": 1.066,
-    "area_p5": 0.989,
-    "area_p95": 1.012,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 2.973,
+    "aniso_max": 642.791,
+    "area_p5": 0.469,
+    "area_p95": 1.318,
+    "flips": 45,
+    "nonaffine": 0.0217
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.097,
-    "aniso_max": 1.098,
-    "area_p5": 1.057,
-    "area_p95": 1.085,
+    "aniso_p95": 1.1,
+    "aniso_max": 1.103,
+    "area_p5": 0.909,
+    "area_p95": 0.911,
     "flips": 0,
-    "nonaffine": 0.0013
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.428,
-    "aniso_max": 1.431,
-    "area_p5": 0.725,
-    "area_p95": 0.752,
+    "aniso_p95": 1.1,
+    "aniso_max": 1.103,
+    "area_p5": 0.909,
+    "area_p95": 0.911,
     "flips": 0,
-    "nonaffine": 0.0014
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.906,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.1,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 54.0,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 51.3
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 2.7,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.5,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.4
   }
  },
  "x+0_y-30": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.52 > 1.45",
-   "ArtMeshEarsL drifts 30px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 31px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.732 > 1.6",
+   "ArtMeshFrontHair: stretch max 4.313 > 3.0",
+   "ArtMeshBackHair: stretch p95 1.889 > 1.6",
+   "ArtMeshBackHair: stretch max 28.966 > 3.0",
+   "ArtMeshBackHair: 3 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -895,41 +925,41 @@
     "nonaffine": 0.0016
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.004,
-    "aniso_max": 1.004,
-    "area_p5": 0.996,
-    "area_p95": 1.004,
+    "aniso_p95": 1.732,
+    "aniso_max": 4.313,
+    "area_p5": 0.736,
+    "area_p95": 1.209,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.0167
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.005,
-    "aniso_max": 1.066,
-    "area_p5": 0.997,
-    "area_p95": 1.004,
-    "flips": 0,
-    "nonaffine": 0.0002
+    "aniso_p95": 1.889,
+    "aniso_max": 28.966,
+    "area_p5": 0.688,
+    "area_p95": 1.207,
+    "flips": 3,
+    "nonaffine": 0.013
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.042,
-    "aniso_max": 1.043,
-    "area_p5": 0.981,
-    "area_p95": 1.014,
+    "aniso_p95": 1.033,
+    "aniso_max": 1.035,
+    "area_p5": 0.968,
+    "area_p95": 0.969,
     "flips": 0,
-    "nonaffine": 0.0012
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.042,
-    "aniso_max": 1.047,
-    "area_p5": 0.982,
-    "area_p95": 1.014,
+    "aniso_p95": 1.033,
+    "aniso_max": 1.035,
+    "area_p5": 0.968,
+    "area_p95": 0.969,
     "flips": 0,
-    "nonaffine": 0.0012
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.799,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 9.1,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 29.9,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 30.5
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.9,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.2
   }
  },
  "x+45_y-30": {
@@ -946,10 +976,15 @@
    "ArtMeshEyelashL: area ratio 0.516..0.817",
    "ArtMeshIridesL: stretch p95 1.591 > 1.45",
    "ArtMeshEyebrowL: stretch p95 1.718 > 1.45",
-   "eye L: aspect changed 71%",
-   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 50px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 59px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 3.388 > 1.6",
+   "ArtMeshFrontHair: stretch max 1007.359 > 3.0",
+   "ArtMeshFrontHair: area ratio 0.362..1.431",
+   "ArtMeshFrontHair: 9 flipped triangles",
+   "ArtMeshBackHair: stretch p95 3.096 > 1.6",
+   "ArtMeshBackHair: stretch max 467.9 > 3.0",
+   "ArtMeshBackHair: area ratio 0.423..1.386",
+   "ArtMeshBackHair: 45 flipped triangles",
+   "eye L: aspect changed 71%"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1033,50 +1068,52 @@
     "nonaffine": 0.0028
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.384,
-    "aniso_max": 1.385,
-    "area_p5": 0.723,
-    "area_p95": 1.281,
-    "flips": 0,
-    "nonaffine": 0.0224
+    "aniso_p95": 3.388,
+    "aniso_max": 1007.359,
+    "area_p5": 0.362,
+    "area_p95": 1.431,
+    "flips": 9,
+    "nonaffine": 0.0288
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.016,
-    "aniso_max": 1.093,
-    "area_p5": 0.989,
-    "area_p95": 1.012,
-    "flips": 0,
-    "nonaffine": 0.0007
+    "aniso_p95": 3.096,
+    "aniso_max": 467.9,
+    "area_p5": 0.423,
+    "area_p95": 1.386,
+    "flips": 45,
+    "nonaffine": 0.0224
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.425,
-    "aniso_max": 1.429,
-    "area_p5": 0.726,
-    "area_p95": 0.752,
+    "aniso_p95": 1.108,
+    "aniso_max": 1.112,
+    "area_p5": 0.902,
+    "area_p95": 0.904,
     "flips": 0,
-    "nonaffine": 0.0014
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.097,
-    "aniso_max": 1.101,
-    "area_p5": 1.06,
-    "area_p95": 1.088,
+    "aniso_p95": 1.108,
+    "aniso_max": 1.11,
+    "area_p5": 0.902,
+    "area_p95": 0.904,
     "flips": 0,
-    "nonaffine": 0.0013
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.589,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.0,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 50.4,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 58.9
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 3.6,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.4,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.4
   }
  },
  "x-22_y+15": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.452 > 1.45",
-   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 27px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 25px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.623 > 1.6",
+   "ArtMeshFrontHair: stretch max 3.685 > 3.0",
+   "ArtMeshBackHair: stretch p95 1.761 > 1.6",
+   "ArtMeshBackHair: stretch max 18.636 > 3.0",
+   "ArtMeshBackHair: 1 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1160,48 +1197,47 @@
     "nonaffine": 0.0013
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.161,
-    "aniso_max": 1.162,
-    "area_p5": 0.861,
-    "area_p95": 1.14,
+    "aniso_p95": 1.623,
+    "aniso_max": 3.685,
+    "area_p5": 0.701,
+    "area_p95": 1.216,
     "flips": 0,
-    "nonaffine": 0.0112
+    "nonaffine": 0.0139
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.009,
-    "aniso_max": 1.045,
-    "area_p5": 0.994,
-    "area_p95": 1.006,
-    "flips": 0,
-    "nonaffine": 0.0004
+    "aniso_p95": 1.761,
+    "aniso_max": 18.636,
+    "area_p5": 0.729,
+    "area_p95": 1.218,
+    "flips": 1,
+    "nonaffine": 0.0108
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.046,
-    "aniso_max": 1.047,
-    "area_p5": 1.025,
-    "area_p95": 1.045,
+    "aniso_p95": 1.029,
+    "aniso_max": 1.032,
+    "area_p5": 0.954,
+    "area_p95": 0.957,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.162,
-    "aniso_max": 1.166,
-    "area_p5": 0.85,
-    "area_p95": 0.876,
+    "aniso_p95": 1.028,
+    "aniso_max": 1.03,
+    "area_p5": 0.954,
+    "area_p95": 0.957,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.954,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 27.1,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 24.6
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.4,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x+0_y+15": {
   "ok": false,
   "fails": [
-   "ArtMeshEarsL drifts 15px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 15px from ArtMeshFrontHair"
+   "ArtMeshBackHair: stretch max 3.208 > 3.0"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1285,50 +1321,50 @@
     "nonaffine": 0.0008
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.002,
-    "aniso_max": 1.002,
-    "area_p5": 0.998,
-    "area_p95": 1.002,
+    "aniso_p95": 1.307,
+    "aniso_max": 1.597,
+    "area_p5": 0.87,
+    "area_p95": 1.097,
     "flips": 0,
-    "nonaffine": 0.0001
+    "nonaffine": 0.008
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.004,
-    "aniso_max": 1.031,
-    "area_p5": 0.998,
-    "area_p95": 1.002,
+    "aniso_p95": 1.378,
+    "aniso_max": 3.208,
+    "area_p5": 0.872,
+    "area_p95": 1.12,
     "flips": 0,
-    "nonaffine": 0.0001
+    "nonaffine": 0.0062
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.021,
-    "aniso_max": 1.022,
-    "area_p5": 0.991,
-    "area_p95": 1.006,
+    "aniso_p95": 1.016,
+    "aniso_max": 1.021,
+    "area_p5": 0.984,
+    "area_p95": 0.987,
     "flips": 0,
-    "nonaffine": 0.0005
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.022,
-    "aniso_max": 1.023,
-    "area_p5": 0.991,
-    "area_p95": 1.006,
+    "aniso_p95": 1.016,
+    "aniso_max": 1.017,
+    "area_p5": 0.985,
+    "area_p95": 0.986,
     "flips": 0,
-    "nonaffine": 0.0005
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.849,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 4.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 14.7,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 15.0
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 0.8,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x+22_y+15": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.458 > 1.45",
-   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 24px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.669 > 1.6",
+   "ArtMeshBackHair: stretch p95 1.72 > 1.6",
+   "ArtMeshBackHair: stretch max 14.901 > 3.0"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1412,49 +1448,48 @@
     "nonaffine": 0.0014
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.161,
-    "aniso_max": 1.162,
-    "area_p5": 0.861,
-    "area_p95": 1.14,
+    "aniso_p95": 1.669,
+    "aniso_max": 2.497,
+    "area_p5": 0.684,
+    "area_p95": 1.21,
+    "flips": 0,
+    "nonaffine": 0.0144
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.72,
+    "aniso_max": 14.901,
+    "area_p5": 0.741,
+    "area_p95": 1.203,
     "flips": 0,
     "nonaffine": 0.0112
    },
-   "ArtMeshBackHair": {
-    "aniso_p95": 1.009,
-    "aniso_max": 1.063,
-    "area_p5": 0.993,
-    "area_p95": 1.006,
-    "flips": 0,
-    "nonaffine": 0.0004
-   },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.161,
-    "aniso_max": 1.165,
-    "area_p5": 0.851,
-    "area_p95": 0.876,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.033,
+    "area_p5": 0.951,
+    "area_p95": 0.953,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.046,
-    "aniso_max": 1.048,
-    "area_p5": 1.025,
-    "area_p95": 1.046,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.033,
+    "area_p5": 0.951,
+    "area_p95": 0.953,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.678,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 24.5,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 29.7
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.7,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.2,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x-22_y+0": {
   "ok": false,
   "fails": [
-   "ArtMeshBackHair drifts 40px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 23px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 19px from ArtMeshFrontHair"
+   "ArtMeshBackHair: stretch max 30.567 > 3.0",
+   "ArtMeshBackHair: 2 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1538,49 +1573,47 @@
     "nonaffine": 0.0011
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.16,
-    "aniso_max": 1.16,
-    "area_p5": 0.862,
-    "area_p95": 1.139,
+    "aniso_p95": 1.508,
+    "aniso_max": 2.302,
+    "area_p5": 0.767,
+    "area_p95": 1.166,
     "flips": 0,
-    "nonaffine": 0.0112
+    "nonaffine": 0.0115
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.008,
-    "aniso_max": 1.033,
-    "area_p5": 0.994,
-    "area_p95": 1.005,
-    "flips": 0,
-    "nonaffine": 0.0004
+    "aniso_p95": 1.597,
+    "aniso_max": 30.567,
+    "area_p5": 0.766,
+    "area_p95": 1.16,
+    "flips": 2,
+    "nonaffine": 0.0089
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.038,
-    "aniso_max": 1.039,
-    "area_p5": 1.03,
-    "area_p95": 1.038,
+    "aniso_p95": 1.032,
+    "aniso_max": 1.033,
+    "area_p5": 0.969,
+    "area_p95": 0.971,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.166,
-    "aniso_max": 1.167,
-    "area_p5": 0.858,
-    "area_p95": 0.872,
+    "aniso_p95": 1.032,
+    "aniso_max": 1.034,
+    "area_p5": 0.969,
+    "area_p95": 0.971,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.941,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.3,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 23.2,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 19.2
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.1,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x+22_y+0": {
   "ok": false,
   "fails": [
-   "ArtMeshBackHair drifts 40px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 19px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 26px from ArtMeshFrontHair"
+   "ArtMeshBackHair: stretch max 71.0 > 3.0"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1664,50 +1697,51 @@
     "nonaffine": 0.0012
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.16,
-    "aniso_max": 1.16,
-    "area_p5": 0.862,
-    "area_p95": 1.139,
+    "aniso_p95": 1.537,
+    "aniso_max": 2.247,
+    "area_p5": 0.759,
+    "area_p95": 1.179,
     "flips": 0,
-    "nonaffine": 0.0112
+    "nonaffine": 0.0121
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.008,
-    "aniso_max": 1.063,
-    "area_p5": 0.994,
-    "area_p95": 1.005,
+    "aniso_p95": 1.552,
+    "aniso_max": 71.0,
+    "area_p5": 0.766,
+    "area_p95": 1.182,
     "flips": 0,
-    "nonaffine": 0.0004
+    "nonaffine": 0.0094
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.164,
-    "aniso_max": 1.167,
-    "area_p5": 0.859,
-    "area_p95": 0.871,
+    "aniso_p95": 1.036,
+    "aniso_max": 1.038,
+    "area_p5": 0.965,
+    "area_p95": 0.967,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.04,
-    "aniso_max": 1.042,
-    "area_p5": 1.031,
-    "area_p95": 1.04,
+    "aniso_p95": 1.036,
+    "aniso_max": 1.037,
+    "area_p5": 0.966,
+    "area_p95": 0.967,
     "flips": 0,
-    "nonaffine": 0.0003
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.653,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.3,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 19.3,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 26.3
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.4,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x-22_y-15": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.481 > 1.45",
-   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 27px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 25px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.642 > 1.6",
+   "ArtMeshBackHair: stretch p95 1.745 > 1.6",
+   "ArtMeshBackHair: stretch max 37.119 > 3.0",
+   "ArtMeshBackHair: 4 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1791,48 +1825,48 @@
     "nonaffine": 0.0014
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.161,
-    "aniso_max": 1.162,
-    "area_p5": 0.861,
-    "area_p95": 1.14,
+    "aniso_p95": 1.642,
+    "aniso_max": 2.295,
+    "area_p5": 0.71,
+    "area_p95": 1.208,
     "flips": 0,
-    "nonaffine": 0.0112
+    "nonaffine": 0.0141
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.009,
-    "aniso_max": 1.045,
-    "area_p5": 0.994,
-    "area_p95": 1.006,
-    "flips": 0,
-    "nonaffine": 0.0004
+    "aniso_p95": 1.745,
+    "aniso_max": 37.119,
+    "area_p5": 0.714,
+    "area_p95": 1.157,
+    "flips": 4,
+    "nonaffine": 0.0109
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.048,
-    "aniso_max": 1.049,
-    "area_p5": 1.028,
-    "area_p95": 1.042,
+    "aniso_p95": 1.028,
+    "aniso_max": 1.029,
+    "area_p5": 0.953,
+    "area_p95": 0.956,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.176,
-    "aniso_max": 1.177,
-    "area_p5": 0.862,
-    "area_p95": 0.877,
+    "aniso_p95": 1.028,
+    "aniso_max": 1.029,
+    "area_p5": 0.953,
+    "area_p95": 0.956,
     "flips": 0,
-    "nonaffine": 0.0007
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.987,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 27.3,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 24.9
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.4,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.2,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x+0_y-15": {
   "ok": false,
   "fails": [
-   "ArtMeshEarsL drifts 15px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 15px from ArtMeshFrontHair"
+   "ArtMeshBackHair: stretch max 9.623 > 3.0",
+   "ArtMeshBackHair: 1 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -1916,50 +1950,52 @@
     "nonaffine": 0.0008
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.002,
-    "aniso_max": 1.002,
-    "area_p5": 0.998,
-    "area_p95": 1.002,
+    "aniso_p95": 1.317,
+    "aniso_max": 1.624,
+    "area_p5": 0.868,
+    "area_p95": 1.105,
     "flips": 0,
-    "nonaffine": 0.0001
+    "nonaffine": 0.0084
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.004,
-    "aniso_max": 1.031,
-    "area_p5": 0.998,
-    "area_p95": 1.002,
-    "flips": 0,
-    "nonaffine": 0.0001
+    "aniso_p95": 1.374,
+    "aniso_max": 9.623,
+    "area_p5": 0.843,
+    "area_p95": 1.103,
+    "flips": 1,
+    "nonaffine": 0.0065
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.021,
-    "aniso_max": 1.023,
-    "area_p5": 0.991,
-    "area_p95": 1.007,
+    "aniso_p95": 1.017,
+    "aniso_max": 1.02,
+    "area_p5": 0.983,
+    "area_p95": 0.985,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.021,
-    "aniso_max": 1.023,
-    "area_p5": 0.991,
-    "area_p95": 1.007,
+    "aniso_p95": 1.017,
+    "aniso_max": 1.018,
+    "area_p5": 0.983,
+    "area_p95": 0.985,
     "flips": 0,
-    "nonaffine": 0.0006
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.829,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 4.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 14.9,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 15.3
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 0.9,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.1
   }
  },
  "x+22_y-15": {
   "ok": false,
   "fails": [
    "ArtMeshFace: stretch p95 1.484 > 1.45",
-   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
-   "ArtMeshEarsL drifts 25px from ArtMeshFrontHair",
-   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+   "ArtMeshFrontHair: stretch p95 1.634 > 1.6",
+   "ArtMeshFrontHair: stretch max 3.259 > 3.0",
+   "ArtMeshBackHair: stretch p95 1.726 > 1.6",
+   "ArtMeshBackHair: stretch max 33.065 > 3.0",
+   "ArtMeshBackHair: 4 flipped triangles"
   ],
   "parts": {
    "ArtMeshFace": {
@@ -2043,41 +2079,41 @@
     "nonaffine": 0.0014
    },
    "ArtMeshFrontHair": {
-    "aniso_p95": 1.161,
-    "aniso_max": 1.162,
-    "area_p5": 0.861,
-    "area_p95": 1.14,
+    "aniso_p95": 1.634,
+    "aniso_max": 3.259,
+    "area_p5": 0.679,
+    "area_p95": 1.219,
     "flips": 0,
-    "nonaffine": 0.0112
+    "nonaffine": 0.0145
    },
    "ArtMeshBackHair": {
-    "aniso_p95": 1.009,
-    "aniso_max": 1.063,
-    "area_p5": 0.994,
-    "area_p95": 1.006,
-    "flips": 0,
-    "nonaffine": 0.0004
+    "aniso_p95": 1.726,
+    "aniso_max": 33.065,
+    "area_p5": 0.679,
+    "area_p95": 1.19,
+    "flips": 4,
+    "nonaffine": 0.0113
    },
    "ArtMeshEarsL": {
-    "aniso_p95": 1.175,
-    "aniso_max": 1.177,
-    "area_p5": 0.862,
-    "area_p95": 0.877,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.045,
+    "area_p5": 0.95,
+    "area_p95": 0.952,
     "flips": 0,
-    "nonaffine": 0.0007
+    "nonaffine": 0.0
    },
    "ArtMeshEarsR": {
-    "aniso_p95": 1.049,
-    "aniso_max": 1.055,
-    "area_p5": 1.03,
-    "area_p95": 1.044,
+    "aniso_p95": 1.031,
+    "aniso_max": 1.035,
+    "area_p5": 0.95,
+    "area_p95": 0.952,
     "flips": 0,
-    "nonaffine": 0.0007
+    "nonaffine": 0.0
    },
    "eye_size_ratio": 0.671,
-   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
-   "separation ArtMeshEarsL/ArtMeshFrontHair": 24.8,
-   "separation ArtMeshEarsR/ArtMeshFrontHair": 29.9
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 1.7,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 0.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 0.2
   }
  }
 }
