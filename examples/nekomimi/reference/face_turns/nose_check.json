@@ -1,0 +1,236 @@
+{
+ "up-left": {
+  "nose_estimated": true,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 2.546,
+    "angle": 28.9,
+    "miss_px": 26.1
+   },
+   "eye_l": {
+    "ratio": 0.949,
+    "angle": -23.9,
+    "miss_px": 25.0
+   },
+   "mouth": {
+    "ratio": 0.647,
+    "angle": -10.7,
+    "miss_px": 12.3
+   },
+   "chin": {
+    "ratio": 0.806,
+    "angle": -16.3,
+    "miss_px": 27.9
+   }
+  },
+  "mean_length_error": 0.536
+ },
+ "up": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 1.147,
+    "angle": 21.1,
+    "miss_px": 18.5
+   },
+   "eye_l": {
+    "ratio": 1.203,
+    "angle": -18.7,
+    "miss_px": 18.1
+   },
+   "mouth": {
+    "ratio": 0.748,
+    "angle": -3.0,
+    "miss_px": 7.2
+   },
+   "chin": {
+    "ratio": 0.901,
+    "angle": 0.0,
+    "miss_px": 7.8
+   }
+  },
+  "mean_length_error": 0.175
+ },
+ "up-right": {
+  "nose_estimated": true,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 0.998,
+    "angle": 23.9,
+    "miss_px": 23.0
+   },
+   "eye_l": {
+    "ratio": 3.316,
+    "angle": -25.7,
+    "miss_px": 29.4
+   },
+   "mouth": {
+    "ratio": 0.638,
+    "angle": -3.5,
+    "miss_px": 12.0
+   },
+   "chin": {
+    "ratio": 0.806,
+    "angle": 12.4,
+    "miss_px": 23.9
+   }
+  },
+  "mean_length_error": 0.718
+ },
+ "left": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 1.673,
+    "angle": -18.6,
+    "miss_px": 23.4
+   },
+   "eye_l": {
+    "ratio": 0.856,
+    "angle": -9.2,
+    "miss_px": 13.6
+   },
+   "mouth": {
+    "ratio": 0.756,
+    "angle": 22.4,
+    "miss_px": 11.0
+   },
+   "chin": {
+    "ratio": 0.949,
+    "angle": 11.8,
+    "miss_px": 13.7
+   }
+  },
+  "mean_length_error": 0.278
+ },
+ "front": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 1.044,
+    "angle": -0.2,
+    "miss_px": 2.3
+   },
+   "eye_l": {
+    "ratio": 1.061,
+    "angle": 0.9,
+    "miss_px": 3.4
+   },
+   "mouth": {
+    "ratio": 1.011,
+    "angle": 2.8,
+    "miss_px": 1.0
+   },
+   "chin": {
+    "ratio": 1.104,
+    "angle": -3.1,
+    "miss_px": 6.5
+   }
+  },
+  "mean_length_error": 0.055
+ },
+ "right": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 0.866,
+    "angle": 11.6,
+    "miss_px": 14.3
+   },
+   "eye_l": {
+    "ratio": 1.843,
+    "angle": 18.9,
+    "miss_px": 26.4
+   },
+   "mouth": {
+    "ratio": 0.712,
+    "angle": -23.6,
+    "miss_px": 12.3
+   },
+   "chin": {
+    "ratio": 0.98,
+    "angle": -3.0,
+    "miss_px": 3.6
+   }
+  },
+  "mean_length_error": 0.321
+ },
+ "down-left": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 1.5,
+    "angle": -8.3,
+    "miss_px": 19.0
+   },
+   "eye_l": {
+    "ratio": 0.909,
+    "angle": -1.9,
+    "miss_px": 5.6
+   },
+   "mouth": {
+    "ratio": 0.6,
+    "angle": 32.1,
+    "miss_px": 17.0
+   },
+   "chin": {
+    "ratio": 0.858,
+    "angle": 21.2,
+    "miss_px": 22.8
+   }
+  },
+  "mean_length_error": 0.283
+ },
+ "down": {
+  "nose_estimated": false,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 0.981,
+    "angle": 0.5,
+    "miss_px": 1.2
+   },
+   "eye_l": {
+    "ratio": 1.063,
+    "angle": -0.9,
+    "miss_px": 3.6
+   },
+   "mouth": {
+    "ratio": 1.149,
+    "angle": 4.3,
+    "miss_px": 2.4
+   },
+   "chin": {
+    "ratio": 1.616,
+    "angle": -5.7,
+    "miss_px": 19.0
+   }
+  },
+  "mean_length_error": 0.212
+ },
+ "down-right": {
+  "nose_estimated": true,
+  "landmarks": {
+   "eye_r": {
+    "ratio": 0.853,
+    "angle": 4.8,
+    "miss_px": 9.7
+   },
+   "eye_l": {
+    "ratio": 1.5,
+    "angle": 9.3,
+    "miss_px": 20.0
+   },
+   "mouth": {
+    "ratio": 0.589,
+    "angle": -36.7,
+    "miss_px": 18.0
+   },
+   "chin": {
+    "ratio": 1.21,
+    "angle": 8.6,
+    "miss_px": 11.7
+   }
+  },
+  "mean_length_error": 0.317
+ }
+}
