@@ -34,8 +34,31 @@ object HeadRetarget {
 	private const val HEAD_ROOT = "DeformHeadContainer"
 	private val ANGLE_PARAMS = listOf("ParamAngleX", "ParamAngleY")
 
-	private class Field(val ax: Float, val ay: Float, val x0: Float, val y0: Float, val step: Float,
-		val nx: Int, val ny: Int, val dx: FloatArray, val dy: FloatArray) {
+	/** One ParamAngleX/Y key: canvas-pixel displacement (y down) of vertex [v] of [drawable] at canvas (x, y). */
+	private interface Key {
+		val ax: Float
+		val ay: Float
+		fun at(drawable: String, v: Int, x: Float, y: Float): Pair<Float, Float>?
+	}
+
+	/** Per-vertex displacements computed elsewhere (tools/head3d.py). */
+	private class VertexKey(override val ax: Float, override val ay: Float, val byDrawable: Map<String, FloatArray>) : Key {
+		override fun at(drawable: String, v: Int, x: Float, y: Float): Pair<Float, Float>? =
+			byDrawable[drawable]?.let { it[v * 2] to it[v * 2 + 1] }
+	}
+
+	private fun loadVertexKeys(path: File): List<Key> =
+		Json.parseToJsonElement(path.readText()).jsonObject.getValue("poses").jsonArray.map { e ->
+			val o = e.jsonObject
+			VertexKey(o.getValue("angleX").jsonPrimitive.float, o.getValue("angleY").jsonPrimitive.float,
+				o.getValue("drawables").jsonObject.mapValues { (_, a) -> a.jsonArray.map { it.jsonPrimitive.float }.toFloatArray() })
+		}
+
+	/** A dense displacement field sampled by canvas position (tools/angle_targets.py). */
+	private class Field(override val ax: Float, override val ay: Float, val x0: Float, val y0: Float, val step: Float,
+		val nx: Int, val ny: Int, val dx: FloatArray, val dy: FloatArray) : Key {
+		override fun at(drawable: String, v: Int, x: Float, y: Float) = sample(x, y)
+
 		fun sample(x: Float, y: Float): Pair<Float, Float> {
 			val fx = ((x - x0) / step).coerceIn(0f, nx - 1.001f)
 			val fy = ((y - y0) / step).coerceIn(0f, ny - 1.001f)
@@ -50,7 +73,7 @@ object HeadRetarget {
 		}
 	}
 
-	private fun loadFields(path: File): List<Field> =
+	private fun loadFields(path: File): List<Key> =
 		Json.parseToJsonElement(path.readText()).jsonObject.getValue("poses").jsonArray.map { e ->
 			val o = e.jsonObject
 			fun f(k: String) = o.getValue(k).jsonPrimitive.float
@@ -59,9 +82,12 @@ object HeadRetarget {
 				o.getValue("ny").jsonPrimitive.int, arr("dx"), arr("dy"))
 		}
 
-	fun build(model: RigPreviewModel, fieldsPath: File): RigEditOverlay {
+	fun build(model: RigPreviewModel, fieldsPath: File): RigEditOverlay = build(model, loadFields(fieldsPath))
+
+	fun buildFromVertices(model: RigPreviewModel, path: File): RigEditOverlay = build(model, loadVertexKeys(path))
+
+	private fun build(model: RigPreviewModel, fields: List<Key>): RigEditOverlay {
 		val puppet = model.rig.puppet
-		val fields = loadFields(fieldsPath)
 		val byId = puppet.deformers.associateBy { it.id }
 		fun underHead(id: DeformerId?): Boolean {
 			var cur = id
@@ -112,7 +138,7 @@ object HeadRetarget {
 					val out = FloatArray(n * 2)
 					for (v in 0 until n) {
 						// world space is y-up (world y = -canvas y); the field is in canvas pixels
-						val (cx, cy) = field.sample(cellWorld[v * 2], -cellWorld[v * 2 + 1])
+						val (cx, cy) = field.at(drawable.id.raw, v, cellWorld[v * 2], -cellWorld[v * 2 + 1]) ?: (0f to 0f)
 						val (lx, ly) = affine.inverseLinear(cx, -cy)
 						out[v * 2] = delta[v * 2] + lx
 						out[v * 2 + 1] = delta[v * 2 + 1] + ly

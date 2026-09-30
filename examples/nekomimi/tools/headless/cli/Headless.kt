@@ -16,6 +16,11 @@ fun main(args: Array<String>) {
 	val output = Path.of(m.getValue("--output"))
 	val progress = ProgressListener { stage, f -> println("%3d%%  %s".format((f * 100).toInt(), stage)) }
 	var result = PSD2LivePipeline().run(input, output, config, progress)
+	m["--retarget-vertices"]?.let { path ->
+		// second pass: head turns from per-vertex displacements (tools/head3d.py)
+		val overlay = io.github.psd2live.ui.HeadRetarget.buildFromVertices(result.previewModel, java.io.File(path))
+		result = PSD2LivePipeline().run(input, output, config.copy(rigEdits = overlay), progress)
+	}
 	m["--retarget"]?.let { fields ->
 		// second pass: replace the generated head-turn keyforms with the measured targets
 		val overlay = io.github.psd2live.ui.HeadRetarget.build(result.previewModel, java.io.File(fields))
@@ -24,6 +29,16 @@ fun main(args: Array<String>) {
 	result.exportedFiles.forEach { println("  ${it.path} (${it.bytes} bytes)") }
 	result.warnings.forEach { System.err.println("WARN: $it") }
 	if (args.contains("--dump")) io.github.psd2live.ui.RigDump.print(result.previewModel)
+	m["--export-geometry"]?.let { path ->
+		// rest + the 8 key extremes + half-way poses, mouth fully open (a closed mouth is a degenerate line)
+		val poses = mutableListOf<Pair<String, Map<String, Float>>>()
+		for (f in listOf(1f, 0.5f)) for (ay in listOf(30f, 0f, -30f)) for (ax in listOf(-45f, 0f, 45f)) {
+			if (f < 1f && ax == 0f && ay == 0f) continue
+			val name = if (ax == 0f && ay == 0f) "rest" else "x%+d_y%+d".format((ax * f).toInt(), (ay * f).toInt())
+			poses += name to mapOf("ParamAngleX" to ax * f, "ParamAngleY" to ay * f, "ParamMouthOpenY" to 1f)
+		}
+		io.github.psd2live.ui.GeometryExport.write(result.previewModel, poses, java.io.File(path))
+	}
 	m["--render"]?.let { dir ->
 		val model = result.previewModel
 		println("PARAMS: " + model.rig.puppet.parameters.joinToString { "${it.id.raw}[${it.min},${it.max}]" })

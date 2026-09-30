@@ -1,6 +1,6 @@
 # nekomimi — 1枚絵からゼロで作った Live2D モデル
 
-正面の立ち絵 1 枚（`reference/front.png`、背景透過 1800×1600）だけから、psd2live 用のレイヤー分け PSD を作り、psd2live で `.moc3` / `.cmo3` まで書き出した例。頭の向き（`ParamAngleX` / `ParamAngleY`）は、`reference/angles-9dir.png`（頭の 9 方向シート）から測った形に合わせてある。
+正面の立ち絵 1 枚（`reference/front.png`、背景透過 1800×1600）だけから、psd2live 用のレイヤー分け PSD を作り、psd2live で `.moc3` / `.cmo3` まで書き出した例。頭の向き（`ParamAngleX` / `ParamAngleY`）は、形を崩さない数値基準（ハーネス）の範囲で、`reference/angles-9dir.png`（頭の 9 方向シート）に近づけてある。
 
 ## フォルダ
 
@@ -15,8 +15,12 @@
 | `psd-input/nekomimi.psd` | 生成した 18 レイヤーの PSD（RGB 8bit、RLE 圧縮） |
 | `moc3-cmo3-output/` | psd2live の出力（`.moc3`、`.cmo3`、physics、idle/blink/nod/shake モーション、4096 テクスチャ） |
 | `tools/build_layers.py` | 立ち絵 → レイヤー分け PSD の生成スクリプト |
-| `tools/angle_targets.py` | 9 方向シートから測った目標位置と、方向ごとの変位場の生成 |
-| `tools/headless/` | GUI（Compose）なしで psd2live のエンジンを動かす CLI、頭の向きの差し替え（`Retarget.kt`）、姿勢描画ツール |
+| `tools/angle_targets.py` | 9 方向シートで測った目印の位置（正面からのずれ） |
+| `tools/head3d.py` | 頭を 3D の立体とみなして回す変形。少数のパラメータを目印とハーネス制約に合わせて求める |
+| `tools/harness.py` | 変形の数値チェック（ハーネス）。基準を外れた姿勢を不合格にする |
+| `reference/head3d_fit.json` | 3D の当てはめ結果（パラメータと目印ごとの誤差） |
+| `reference/harness_report.json` | 最終モデルのハーネス結果（姿勢・パーツごとの数値） |
+| `tools/headless/` | GUI（Compose）なしで psd2live のエンジンを動かす CLI、頭の向きの差し替え（`Retarget.kt`）、形状の書き出し（`Export.kt`）、姿勢描画ツール |
 
 ## レイヤー構成（下 → 上）
 
@@ -36,48 +40,62 @@
 
 ## 頭の向き（9 方向）
 
-psd2live が自動生成する 9 軸の変形は、顔の輪郭をほとんど変えないため、9 方向シートと顔の土台の形が合わなかった。そこで次のように差し替えている。
+### 経緯
+psd2live 標準の 9 軸変形は顔の輪郭をほとんど変えない。最初の差し替え（目印ごとに位置を合わせ、間を補間する方法）は、目印の位置は合っても顔全体がゴムのように歪んだ。その反省から、今の方法は「形を崩さないこと」を先に数値で縛り、その範囲で参考シートに近づける。
 
-1. **目標を測る**（`tools/angle_targets.py`）: 9 方向シートの各コマで、目・目尻・鼻・口・顎先・顎の左右・頬・眉間・額・頭頂・耳・髪の外側を、首輪のバックルを基準に測った。正面コマとの差を、目の間隔（モデル 239px ／ シート 87px）で拡大してモデルの座標へ移す。左右のコマは平均して左右対称にし、斜めは左右の差と上下の差を合成する（上下分は 0.7 倍。シートの斜めコマの実測に合わせた値）。
-2. **変位場にする**: 測った点と、動かない胴体の点を通る thin-plate spline で、方向ごとになめらかな変位場を作る。
-3. **キーフォームを差し替える**（`tools/headless/cli/Retarget.kt`）: 頭の下にあるデフォーマの `ParamAngleX/Y` キーフォームをすべて静止形にしてから、頭のメッシュ（顔・目・眉・鼻・口・耳・前髪・後ろ髪）の頂点に、各キー（X ±45 × Y ±30 の 8 方向）で変位場を足したキーフォームを入れる。既存の目の開閉・口の形と開き・眉・瞳の形のキーフォームとはすべて組み合わせて作るので、どの向きでもまばたきや口パクが動く。psd2live の `rigEdits` として渡すので、`.moc3` と `.cmo3` の両方に入る。
+### ハーネス（`tools/harness.py`）
+各姿勢（キーの端 8 方向と、その中間 7 方向）で、正面との比較を数値で判定する。
 
-測った主な動き（シート上の px。モデルでは約 2.75 倍）:
+| チェック | 中身 | 基準 |
+| --- | --- | --- |
+| 三角形の歪み | メッシュの三角形ごとの伸び方（縦横の伸び率の比）、面積比、裏返り | 顔まわり p95 ≤ 1.45、髪 p95 ≤ 1.6、裏返り 0 |
+| パーツの曲がり | パーツ全体をアフィン変換（回転・縮み・傾き）で当てはめた残り | 顔まわり 2.5%、髪 5% 以内 |
+| 目 | 白目の縦横比の変化、左右の目の大きさの比 | 変化 30% 以内、比 0.55 以上 |
+| レイヤーのずれ | 正面で重なっている 後ろ髪↔前髪、耳↔前髪 が離れる量 | p95 12px 以内（超えると輪郭が二重に見える、耳が浮く） |
 
-| 方向 | 目 | 鼻 | 口 | 顎先 | 頭頂 | 耳 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 上 | ↑40 | ↑64 | ↑53 | ↑44 | ↓5 | ↓53、外へ |
-| 下 | ↓33 | ↓31 | ↓28 | ↓11（首輪にかかる） | ↑8 | ↓8、外へ |
-| 右（左は鏡像） | →61 / →41、↑14 | →73 | →59 | →48 | →15 | 奥 →28、手前 ←11 |
+1 つでも外れた姿勢は不合格。最初の差し替え版は 16 姿勢すべて不合格（顔の三角形が一方向に最大約 3.2 倍に伸びていた）で、見た目の歪みを数値で捉えられることを確認してある。
+
+### 変形（`tools/head3d.py`）
+頭を 1 つのなめらかな立体（ドーム）とみなし、頭のメッシュの各頂点に奥行きを与えて、左右（yaw）・上下（pitch、首が支点）に回して正射影する。前髪・後ろ髪・耳は同じ髪の殻に載せ（後ろ髪は 8px、耳は 20px まで後ろにずらせる）、鼻先だけ前に出す。
+
+決める値は中心・半径・曲がり具合・奥行き・支点・回転角など 15 個だけで、参考シートで測った目印（`tools/angle_targets.py`）に最小二乗で合わせる。そのとき上のハーネスの基準（少し厳しめ）を罰則として一緒に入れるので、「目印に近いが歪む」解は選ばれない。斜めは左右の回転のあとに上下の回転をかけるだけで、手で混ぜる係数はない。
+
+求めた変位は `Retarget.kt` で頭のメッシュの頂点キーフォーム（`ParamAngleX` ±45 × `ParamAngleY` ±30）に入れる。psd2live の頭のデフォーマの角度キーフォームは静止形に置き換え、目の開閉・口・眉・瞳の既存キーフォームとはすべて組み合わせる。
+
+当てはめ結果: 左右 17.8°、上 17.2°、下 12.6°。目印の平均誤差 24.7px（モデル座標。参考シート上で約 9px）。
 
 ## 再現手順
 
 ```bash
-# 1. 立ち絵 → PSD（Python 3 + pillow numpy opencv-python-headless psd-tools）
+# 1. 立ち絵 → PSD（Python 3 + pillow numpy scipy opencv-python-headless psd-tools）
 python3 tools/build_layers.py reference/front.png psd-input/nekomimi.psd
 
 # 2. GUI なし CLI をビルド（JDK 21）
-../../gradlew -p tools/headless installDist
+sh ../../gradlew -p tools/headless installDist
+BIN=tools/headless/build/install/psd2live-headless/bin/psd2live-headless
 
-# 3. 9 方向シートから頭の向きの変位場を作る（Python 3 + numpy scipy）
-python3 tools/angle_targets.py /tmp/angle_fields.json
+# 3. psd2live 標準のリグを作り、静止形の形状を書き出す
+$BIN --input psd-input/nekomimi.psd --output /tmp/base --export-geometry /tmp/geo_rest.json
 
-# 4. PSD → Live2D。--retarget で頭の向きを差し替え、--render で reference/ に姿勢シートを出す
-tools/headless/build/install/psd2live-headless/bin/psd2live-headless \
-  --input psd-input/nekomimi.psd --output moc3-cmo3-output \
-  --atlas 4096 --mesh-spacing 40 --retarget /tmp/angle_fields.json --render reference
+# 4. 3D の当てはめ（ハーネス制約つき）→ 頂点ごとの変位
+(cd tools && python3 head3d.py /tmp/geo_rest.json /tmp/disp.json --report ../reference/head3d_fit.json)
+
+# 5. 変位を入れて書き出し、姿勢シートと形状を出す
+$BIN --input psd-input/nekomimi.psd --output moc3-cmo3-output --atlas 4096 --mesh-spacing 40 \
+  --retarget-vertices /tmp/disp.json --render reference --export-geometry /tmp/geo_final.json
+
+# 6. ハーネス（不合格があれば終了コード 1）
+python3 tools/harness.py /tmp/geo_final.json --report reference/harness_report.json
 ```
-
-Windows のデスクトップアプリで `psd-input/nekomimi.psd` を開くと、頭の向きは psd2live 標準の変形になる（手順 4 の差し替えは含まれない）。
 
 `tools/headless/` は、本体のビルドに必要な Google Maven（`dl.google.com`）へ届かない環境でも動くよう、Compose UI を除いた engine（`core` / `i18n` / `org.umamo`）と `ui/RigCanvasSupport.kt`（AWT のみ）だけをコンパイルする。
 
 ## 既知の限界
 
-- 1 枚絵からの自動分割なので、隠れていた部分（髪の裏、耳の付け根、顔の輪郭の裏）は単色か周囲の色で埋めてあるだけ。大きく動かすと、塗り足しが平坦に見える場所がある。
-- `ParamAngleZ` を 20° 以上にすると、ポニーテールの付け根で前髪とポニーテールの境目が少し見える。
-- ポニーテール左端の細い毛先と、目尻のごく細い部分は、メッシュ化の際に 1〜5px 程度落ちる（psd2live の検証警告に出る）。
-- 口の中・舌・閉じたときの線は描き起こしで、原画の作者が描いたものではない。
-- 9 方向シートの目印は手で測ったので、数 px 単位のずれはある。変形は 2D の変位で、髪の重なり順が向きで入れ替わるような表現（奥の髪が顔の後ろへ回るなど）はしていない。
-- 横を向いたときの奥側の目は、シートほど細くならない。
-- 頭の向きのキーフォームは頂点ごとに持つため、口のメッシュ（口の形 9 × 開き 33 の既存キー）で約 8,000 個になり、`.moc3` / `.cmo3` が大きめになる。
+- **動きが参考シートより小さい**: 形を崩さない条件の中で合わせた結果、回転は左右約 18°・上下約 13〜17° に収まった。参考シートほど大きくは向かない。特に下向きは、顎が首輪にかかるところまで下がらない。正面 1 枚の絵を変形するだけでは、これ以上回すと歪みの基準を超える。大きく向かせるには、横顔寄りの目や輪郭などの差分パーツを描き足す必要がある。
+- ハーネスは形の歪みとレイヤーのずれを見るが、「参考シートにどれだけ似ているか」の見た目の判定はしていない。似ているかどうかは `reference/compare_9dir.png` を人が見て判断する。
+- 1 枚絵からの自動分割なので、隠れていた部分（髪の裏、耳の付け根、顔の輪郭の裏）は単色か周囲の色で埋めてあるだけ。
+- ポニーテールの細い毛先が、斜め上・左向きで小さな点として離れて見える。上向きの斜めでは首の影が少し塊に見える。
+- 口の中・舌・閉じたときの線は描き起こし。
+- 頭の向きのキーフォームは頂点ごとに持つため、口のメッシュ（既存キー 297 個）で約 8,000 個になる。
+- Windows のデスクトップアプリで PSD を直接開くと、psd2live 標準の変形になる（手順 3〜5 の差し替えは含まれない）。

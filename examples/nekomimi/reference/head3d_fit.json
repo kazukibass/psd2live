@@ -1,0 +1,1462 @@
+{
+ "params": {
+  "cx": 895.9525987283217,
+  "cy": 549.0030010020547,
+  "rx": 405.49444893489357,
+  "ry": 412.0589318375046,
+  "rz": 447.5507037826341,
+  "k": 0.4822320496813521,
+  "nose": 119.99999992153148,
+  "hair": 5.376393011027729e-12,
+  "back": 7.999999999999564,
+  "ear": 19.999999999389793,
+  "py": 652.2797241254183,
+  "pz": 91.56844078511703,
+  "yaw": 17.817140390598073,
+  "up": 17.1810510643099,
+  "down": 12.61187674345636
+ },
+ "rms": 24.6725046299306,
+ "landmarks": [
+  {
+   "landmark": "eye_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    167.6,
+    -38.5
+   ],
+   "error": [
+    30.9,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    112.6,
+    -38.5
+   ],
+   "error": [
+    11.0,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_out_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    159.3,
+    -38.5
+   ],
+   "error": [
+    29.0,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_out_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    98.9,
+    -38.5
+   ],
+   "error": [
+    10.5,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_in_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    173.1,
+    -38.5
+   ],
+   "error": [
+    35.6,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_in_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    123.6,
+    -38.5
+   ],
+   "error": [
+    6.1,
+    38.5
+   ]
+  },
+  {
+   "landmark": "cheek_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    159.3,
+    -35.7
+   ],
+   "error": [
+    26.0,
+    35.7
+   ]
+  },
+  {
+   "landmark": "cheek_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    90.7,
+    -35.7
+   ],
+   "error": [
+    25.4,
+    35.7
+   ]
+  },
+  {
+   "landmark": "nose",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    200.5,
+    -49.4
+   ],
+   "error": [
+    28.1,
+    49.4
+   ]
+  },
+  {
+   "landmark": "mouth",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    162.1,
+    -35.7
+   ],
+   "error": [
+    30.0,
+    35.7
+   ]
+  },
+  {
+   "landmark": "chin",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    131.9,
+    -33.0
+   ],
+   "error": [
+    13.0,
+    33.0
+   ]
+  },
+  {
+   "landmark": "jaw_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    151.1,
+    -33.0
+   ],
+   "error": [
+    21.5,
+    33.0
+   ]
+  },
+  {
+   "landmark": "jaw_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    82.4,
+    -33.0
+   ],
+   "error": [
+    33.9,
+    33.0
+   ]
+  },
+  {
+   "landmark": "brow_mid",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    142.9,
+    -38.5
+   ],
+   "error": [
+    13.4,
+    38.5
+   ]
+  },
+  {
+   "landmark": "forehead",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    96.1,
+    -27.5
+   ],
+   "error": [
+    9.9,
+    27.5
+   ]
+  },
+  {
+   "landmark": "top",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    41.2,
+    -11.0
+   ],
+   "error": [
+    12.1,
+    5.5
+   ]
+  },
+  {
+   "landmark": "ear_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    76.9,
+    -13.7
+   ],
+   "error": [
+    12.0,
+    6.9
+   ]
+  },
+  {
+   "landmark": "ear_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    -30.2,
+    -13.7
+   ],
+   "error": [
+    23.4,
+    6.9
+   ]
+  },
+  {
+   "landmark": "ear_base_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    68.7,
+    -22.0
+   ],
+   "error": [
+    11.1,
+    11.0
+   ]
+  },
+  {
+   "landmark": "ear_base_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    -13.7,
+    -22.0
+   ],
+   "error": [
+    39.3,
+    11.0
+   ]
+  },
+  {
+   "landmark": "hair_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    -22.0,
+    -33.0
+   ],
+   "error": [
+    62.5,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    -22.0,
+    -33.0
+   ],
+   "error": [
+    40.0,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_tip_r",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    27.5,
+    -33.0
+   ],
+   "error": [
+    41.1,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_tip_l",
+   "key": [
+    45,
+    0
+   ],
+   "observed": [
+    13.7,
+    -33.0
+   ],
+   "error": [
+    32.9,
+    16.5
+   ]
+  },
+  {
+   "landmark": "eye_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -112.6,
+    -38.5
+   ],
+   "error": [
+    13.4,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -167.6,
+    -38.5
+   ],
+   "error": [
+    31.7,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_out_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -98.9,
+    -38.5
+   ],
+   "error": [
+    12.6,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_out_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -159.3,
+    -38.5
+   ],
+   "error": [
+    30.2,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_in_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -123.6,
+    -38.5
+   ],
+   "error": [
+    8.5,
+    38.5
+   ]
+  },
+  {
+   "landmark": "eye_in_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -173.1,
+    -38.5
+   ],
+   "error": [
+    35.7,
+    38.5
+   ]
+  },
+  {
+   "landmark": "cheek_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -90.7,
+    -35.7
+   ],
+   "error": [
+    26.8,
+    35.7
+   ]
+  },
+  {
+   "landmark": "cheek_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -159.3,
+    -35.7
+   ],
+   "error": [
+    26.6,
+    35.7
+   ]
+  },
+  {
+   "landmark": "nose",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -200.5,
+    -49.4
+   ],
+   "error": [
+    27.7,
+    49.4
+   ]
+  },
+  {
+   "landmark": "mouth",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -162.1,
+    -35.7
+   ],
+   "error": [
+    29.3,
+    35.7
+   ]
+  },
+  {
+   "landmark": "chin",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -131.9,
+    -33.0
+   ],
+   "error": [
+    12.6,
+    33.0
+   ]
+  },
+  {
+   "landmark": "jaw_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -82.4,
+    -33.0
+   ],
+   "error": [
+    35.1,
+    33.0
+   ]
+  },
+  {
+   "landmark": "jaw_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -151.1,
+    -33.0
+   ],
+   "error": [
+    21.9,
+    33.0
+   ]
+  },
+  {
+   "landmark": "brow_mid",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -142.9,
+    -38.5
+   ],
+   "error": [
+    13.0,
+    38.5
+   ]
+  },
+  {
+   "landmark": "forehead",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -96.1,
+    -27.5
+   ],
+   "error": [
+    10.3,
+    27.5
+   ]
+  },
+  {
+   "landmark": "top",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -41.2,
+    -11.0
+   ],
+   "error": [
+    12.3,
+    5.5
+   ]
+  },
+  {
+   "landmark": "ear_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    30.2,
+    -13.7
+   ],
+   "error": [
+    24.5,
+    6.9
+   ]
+  },
+  {
+   "landmark": "ear_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -76.9,
+    -13.7
+   ],
+   "error": [
+    12.6,
+    6.9
+   ]
+  },
+  {
+   "landmark": "ear_base_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    13.7,
+    -22.0
+   ],
+   "error": [
+    40.0,
+    11.0
+   ]
+  },
+  {
+   "landmark": "ear_base_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -68.7,
+    -22.0
+   ],
+   "error": [
+    10.7,
+    11.0
+   ]
+  },
+  {
+   "landmark": "hair_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    22.0,
+    -33.0
+   ],
+   "error": [
+    43.5,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    22.0,
+    -33.0
+   ],
+   "error": [
+    60.3,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_tip_r",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -13.7,
+    -33.0
+   ],
+   "error": [
+    33.8,
+    16.5
+   ]
+  },
+  {
+   "landmark": "hair_tip_l",
+   "key": [
+    -45,
+    0
+   ],
+   "observed": [
+    -27.5,
+    -33.0
+   ],
+   "error": [
+    40.6,
+    16.5
+   ]
+  },
+  {
+   "landmark": "eye_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    16.8
+   ]
+  },
+  {
+   "landmark": "eye_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    18.3
+   ]
+  },
+  {
+   "landmark": "eye_out_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    27.6
+   ]
+  },
+  {
+   "landmark": "eye_out_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    29.5
+   ]
+  },
+  {
+   "landmark": "eye_in_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    13.6
+   ]
+  },
+  {
+   "landmark": "eye_in_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -109.9
+   ],
+   "error": [
+    0.0,
+    14.8
+   ]
+  },
+  {
+   "landmark": "cheek_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    -8.2,
+    -104.4
+   ],
+   "error": [
+    8.2,
+    12.7
+   ]
+  },
+  {
+   "landmark": "cheek_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    8.2,
+    -104.4
+   ],
+   "error": [
+    8.2,
+    13.7
+   ]
+  },
+  {
+   "landmark": "nose",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -175.8
+   ],
+   "error": [
+    0.0,
+    38.5
+   ]
+  },
+  {
+   "landmark": "mouth",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -145.6
+   ],
+   "error": [
+    0.0,
+    44.6
+   ]
+  },
+  {
+   "landmark": "chin",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -120.9
+   ],
+   "error": [
+    0.0,
+    27.7
+   ]
+  },
+  {
+   "landmark": "jaw_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    -16.5,
+    -68.7
+   ],
+   "error": [
+    16.5,
+    25.2
+   ]
+  },
+  {
+   "landmark": "jaw_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    16.5,
+    -68.7
+   ],
+   "error": [
+    16.5,
+    24.5
+   ]
+  },
+  {
+   "landmark": "brow_mid",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -82.4
+   ],
+   "error": [
+    0.0,
+    4.9
+   ]
+  },
+  {
+   "landmark": "forehead",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -33.0
+   ],
+   "error": [
+    0.0,
+    24.6
+   ]
+  },
+  {
+   "landmark": "top",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    13.7
+   ],
+   "error": [
+    0.0,
+    11.4
+   ]
+  },
+  {
+   "landmark": "ear_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    -33.0,
+    145.6
+   ],
+   "error": [
+    16.5,
+    62.4
+   ]
+  },
+  {
+   "landmark": "ear_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    33.0,
+    145.6
+   ],
+   "error": [
+    16.5,
+    61.4
+   ]
+  },
+  {
+   "landmark": "ear_base_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    -16.5,
+    82.4
+   ],
+   "error": [
+    8.2,
+    56.2
+   ]
+  },
+  {
+   "landmark": "ear_base_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    16.5,
+    82.4
+   ],
+   "error": [
+    8.2,
+    55.7
+   ]
+  },
+  {
+   "landmark": "hair_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    -13.7,
+    8.2
+   ],
+   "error": [
+    6.9,
+    29.1
+   ]
+  },
+  {
+   "landmark": "hair_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    13.7,
+    8.2
+   ],
+   "error": [
+    6.9,
+    26.4
+   ]
+  },
+  {
+   "landmark": "hair_tip_r",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -27.5
+   ],
+   "error": [
+    0.0,
+    20.8
+   ]
+  },
+  {
+   "landmark": "hair_tip_l",
+   "key": [
+    0,
+    30
+   ],
+   "observed": [
+    0.0,
+    -27.5
+   ],
+   "error": [
+    0.0,
+    20.1
+   ]
+  },
+  {
+   "landmark": "eye_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    13.4
+   ]
+  },
+  {
+   "landmark": "eye_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    14.5
+   ]
+  },
+  {
+   "landmark": "eye_out_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    20.3
+   ]
+  },
+  {
+   "landmark": "eye_out_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    21.4
+   ]
+  },
+  {
+   "landmark": "eye_in_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    10.8
+   ]
+  },
+  {
+   "landmark": "eye_in_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    90.7
+   ],
+   "error": [
+    0.0,
+    11.7
+   ]
+  },
+  {
+   "landmark": "cheek_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    8.2,
+    76.9
+   ],
+   "error": [
+    8.2,
+    6.2
+   ]
+  },
+  {
+   "landmark": "cheek_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    -8.2,
+    76.9
+   ],
+   "error": [
+    8.2,
+    6.9
+   ]
+  },
+  {
+   "landmark": "nose",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    85.2
+   ],
+   "error": [
+    0.0,
+    19.3
+   ]
+  },
+  {
+   "landmark": "mouth",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    76.9
+   ],
+   "error": [
+    0.0,
+    2.5
+   ]
+  },
+  {
+   "landmark": "chin",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    30.2
+   ],
+   "error": [
+    0.0,
+    31.9
+   ]
+  },
+  {
+   "landmark": "jaw_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    16.5,
+    60.4
+   ],
+   "error": [
+    16.5,
+    6.8
+   ]
+  },
+  {
+   "landmark": "jaw_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    -16.5,
+    60.4
+   ],
+   "error": [
+    16.5,
+    6.3
+   ]
+  },
+  {
+   "landmark": "brow_mid",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    82.4
+   ],
+   "error": [
+    0.0,
+    4.1
+   ]
+  },
+  {
+   "landmark": "forehead",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    60.4
+   ],
+   "error": [
+    0.0,
+    5.1
+   ]
+  },
+  {
+   "landmark": "top",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    -22.0
+   ],
+   "error": [
+    0.0,
+    31.8
+   ]
+  },
+  {
+   "landmark": "ear_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    -27.5,
+    22.0
+   ],
+   "error": [
+    13.7,
+    0.5
+   ]
+  },
+  {
+   "landmark": "ear_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    27.5,
+    22.0
+   ],
+   "error": [
+    13.7,
+    1.0
+   ]
+  },
+  {
+   "landmark": "ear_base_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    -16.5,
+    33.0
+   ],
+   "error": [
+    8.2,
+    6.6
+   ]
+  },
+  {
+   "landmark": "ear_base_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    16.5,
+    33.0
+   ],
+   "error": [
+    8.2,
+    6.3
+   ]
+  },
+  {
+   "landmark": "hair_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    -16.5,
+    -8.2
+   ],
+   "error": [
+    8.2,
+    25.2
+   ]
+  },
+  {
+   "landmark": "hair_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    16.5,
+    -8.2
+   ],
+   "error": [
+    8.2,
+    23.2
+   ]
+  },
+  {
+   "landmark": "hair_tip_r",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    33.0
+   ],
+   "error": [
+    0.0,
+    6.5
+   ]
+  },
+  {
+   "landmark": "hair_tip_l",
+   "key": [
+    0,
+    -30
+   ],
+   "observed": [
+    0.0,
+    33.0
+   ],
+   "error": [
+    0.0,
+    6.1
+   ]
+  }
+ ]
+}
