@@ -1,0 +1,2083 @@
+{
+ "x-45_y+30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.585 > 1.45",
+   "ArtMeshFace: stretch max 3.766 > 2.2",
+   "ArtMeshFace: area ratio 0.406..1.406",
+   "ArtMeshEyewhiteR: stretch p95 1.907 > 1.45",
+   "ArtMeshEyelashL: stretch p95 1.452 > 1.45",
+   "ArtMeshEyelashR: stretch p95 2.146 > 1.45",
+   "ArtMeshEyelashR: stretch max 2.433 > 2.2",
+   "ArtMeshEyelashR: area ratio 0.497..0.8",
+   "ArtMeshIridesR: stretch p95 1.509 > 1.45",
+   "ArtMeshEyebrowR: stretch p95 1.566 > 1.45",
+   "eye R: aspect changed 50%",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 54px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 50px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.585,
+    "aniso_max": 3.766,
+    "area_p5": 0.406,
+    "area_p95": 1.406,
+    "flips": 0,
+    "nonaffine": 0.0244
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.103,
+    "aniso_max": 1.106,
+    "area_p5": 0.932,
+    "area_p95": 0.979,
+    "flips": 0,
+    "nonaffine": 0.0025
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.375,
+    "aniso_max": 1.423,
+    "area_p5": 1.034,
+    "area_p95": 1.256,
+    "flips": 0,
+    "nonaffine": 0.0099
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.907,
+    "aniso_max": 2.143,
+    "area_p5": 0.563,
+    "area_p95": 0.805,
+    "flips": 0,
+    "nonaffine": 0.0094
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.452,
+    "aniso_max": 1.487,
+    "area_p5": 0.994,
+    "area_p95": 1.28,
+    "flips": 0,
+    "nonaffine": 0.0144
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 2.146,
+    "aniso_max": 2.433,
+    "area_p5": 0.497,
+    "area_p95": 0.8,
+    "flips": 0,
+    "nonaffine": 0.0143
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.231,
+    "aniso_max": 1.24,
+    "area_p5": 1.047,
+    "area_p95": 1.144,
+    "flips": 0,
+    "nonaffine": 0.0039
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.509,
+    "aniso_max": 1.523,
+    "area_p5": 0.69,
+    "area_p95": 0.787,
+    "flips": 0,
+    "nonaffine": 0.0038
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.383,
+    "aniso_max": 1.393,
+    "area_p5": 0.999,
+    "area_p95": 1.111,
+    "flips": 0,
+    "nonaffine": 0.0063
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.566,
+    "aniso_max": 1.566,
+    "area_p5": 0.642,
+    "area_p95": 0.691,
+    "flips": 0,
+    "nonaffine": 0.0026
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.384,
+    "aniso_max": 1.385,
+    "area_p5": 0.723,
+    "area_p95": 1.281,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.016,
+    "aniso_max": 1.046,
+    "area_p5": 0.988,
+    "area_p95": 1.011,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.098,
+    "aniso_max": 1.099,
+    "area_p5": 1.05,
+    "area_p95": 1.09,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.401,
+    "aniso_max": 1.404,
+    "area_p5": 0.702,
+    "area_p95": 0.75,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "eye_size_ratio": 0.785,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.1,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 53.5,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 50.4
+  }
+ },
+ "x+0_y+30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.463 > 1.45",
+   "ArtMeshEarsL drifts 29px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.463,
+    "aniso_max": 1.539,
+    "area_p5": 0.797,
+    "area_p95": 1.24,
+    "flips": 0,
+    "nonaffine": 0.0142
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.037,
+    "aniso_max": 1.042,
+    "area_p5": 1.0,
+    "area_p95": 1.037,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.289,
+    "aniso_max": 1.325,
+    "area_p5": 0.954,
+    "area_p95": 0.998,
+    "flips": 0,
+    "nonaffine": 0.0058
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.285,
+    "aniso_max": 1.336,
+    "area_p5": 0.951,
+    "area_p95": 0.997,
+    "flips": 0,
+    "nonaffine": 0.0055
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.343,
+    "aniso_max": 1.368,
+    "area_p5": 0.935,
+    "area_p95": 0.957,
+    "flips": 0,
+    "nonaffine": 0.0084
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.336,
+    "aniso_max": 1.387,
+    "area_p5": 0.931,
+    "area_p95": 0.957,
+    "flips": 0,
+    "nonaffine": 0.0083
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.188,
+    "aniso_max": 1.194,
+    "area_p5": 0.95,
+    "area_p95": 0.986,
+    "flips": 0,
+    "nonaffine": 0.0023
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.177,
+    "aniso_max": 1.182,
+    "area_p5": 0.951,
+    "area_p95": 0.999,
+    "flips": 0,
+    "nonaffine": 0.0022
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.282,
+    "aniso_max": 1.294,
+    "area_p5": 0.877,
+    "area_p95": 0.897,
+    "flips": 0,
+    "nonaffine": 0.0037
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.202,
+    "aniso_max": 1.205,
+    "area_p5": 0.889,
+    "area_p95": 0.902,
+    "flips": 0,
+    "nonaffine": 0.0015
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.004,
+    "aniso_max": 1.004,
+    "area_p5": 0.996,
+    "area_p95": 1.004,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.005,
+    "aniso_max": 1.031,
+    "area_p5": 0.996,
+    "area_p95": 1.003,
+    "flips": 0,
+    "nonaffine": 0.0002
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.042,
+    "aniso_max": 1.043,
+    "area_p5": 0.983,
+    "area_p95": 1.012,
+    "flips": 0,
+    "nonaffine": 0.001
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.043,
+    "aniso_max": 1.046,
+    "area_p5": 0.982,
+    "area_p95": 1.012,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "eye_size_ratio": 0.877,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 9.1,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 29.5,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 30.0
+  }
+ },
+ "x+45_y+30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.649 > 1.45",
+   "ArtMeshFace: stretch max 3.822 > 2.2",
+   "ArtMeshFace: area ratio 0.407..1.423",
+   "ArtMeshFace: bending 0.025 > 0.025",
+   "ArtMeshEyewhiteL: stretch p95 2.001 > 1.45",
+   "ArtMeshEyewhiteL: area ratio 0.535..0.777",
+   "ArtMeshEyelashL: stretch p95 2.302 > 1.45",
+   "ArtMeshEyelashL: stretch max 2.491 > 2.2",
+   "ArtMeshEyelashL: area ratio 0.466..0.777",
+   "ArtMeshEyelashR: stretch p95 1.452 > 1.45",
+   "ArtMeshIridesL: stretch p95 1.585 > 1.45",
+   "ArtMeshEyebrowL: stretch p95 1.938 > 1.45",
+   "ArtMeshEyebrowL: area ratio 0.521..0.661",
+   "eye L: aspect changed 66%",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 50px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 58px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.649,
+    "aniso_max": 3.822,
+    "area_p5": 0.407,
+    "area_p95": 1.423,
+    "flips": 0,
+    "nonaffine": 0.0252
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.115,
+    "aniso_max": 1.116,
+    "area_p5": 0.921,
+    "area_p95": 0.974,
+    "flips": 0,
+    "nonaffine": 0.0025
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 2.001,
+    "aniso_max": 2.199,
+    "area_p5": 0.535,
+    "area_p95": 0.777,
+    "flips": 0,
+    "nonaffine": 0.0103
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.378,
+    "aniso_max": 1.452,
+    "area_p5": 1.02,
+    "area_p95": 1.267,
+    "flips": 0,
+    "nonaffine": 0.0097
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 2.302,
+    "aniso_max": 2.491,
+    "area_p5": 0.466,
+    "area_p95": 0.777,
+    "flips": 0,
+    "nonaffine": 0.0149
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.452,
+    "aniso_max": 1.52,
+    "area_p5": 0.983,
+    "area_p95": 1.28,
+    "flips": 0,
+    "nonaffine": 0.0148
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.585,
+    "aniso_max": 1.609,
+    "area_p5": 0.656,
+    "area_p95": 0.764,
+    "flips": 0,
+    "nonaffine": 0.0041
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.217,
+    "aniso_max": 1.223,
+    "area_p5": 1.033,
+    "area_p95": 1.144,
+    "flips": 0,
+    "nonaffine": 0.0039
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.938,
+    "aniso_max": 1.989,
+    "area_p5": 0.521,
+    "area_p95": 0.661,
+    "flips": 0,
+    "nonaffine": 0.0065
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.282,
+    "aniso_max": 1.285,
+    "area_p5": 0.99,
+    "area_p95": 1.049,
+    "flips": 0,
+    "nonaffine": 0.0028
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.384,
+    "aniso_max": 1.385,
+    "area_p5": 0.723,
+    "area_p95": 1.281,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.016,
+    "aniso_max": 1.062,
+    "area_p5": 0.987,
+    "area_p95": 1.011,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.398,
+    "aniso_max": 1.407,
+    "area_p5": 0.704,
+    "area_p95": 0.75,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.099,
+    "aniso_max": 1.101,
+    "area_p5": 1.051,
+    "area_p95": 1.092,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "eye_size_ratio": 0.579,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.0,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 49.7,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 58.3
+  }
+ },
+ "x-45_y+0": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.222 > 1.45",
+   "ArtMeshFace: stretch max 2.511 > 2.2",
+   "ArtMeshFace: area ratio 0.471..1.391",
+   "ArtMeshEyewhiteR: stretch p95 1.704 > 1.45",
+   "ArtMeshEyelashR: stretch p95 1.841 > 1.45",
+   "ArtMeshEyelashR: area ratio 0.545..0.841",
+   "eye R: aspect changed 40%",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 46px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 38px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.222,
+    "aniso_max": 2.511,
+    "area_p5": 0.471,
+    "area_p95": 1.391,
+    "flips": 0,
+    "nonaffine": 0.0204
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.124,
+    "aniso_max": 1.128,
+    "area_p5": 0.923,
+    "area_p95": 0.961,
+    "flips": 0,
+    "nonaffine": 0.0021
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.291,
+    "aniso_max": 1.332,
+    "area_p5": 1.073,
+    "area_p95": 1.291,
+    "flips": 0,
+    "nonaffine": 0.0083
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.704,
+    "aniso_max": 1.864,
+    "area_p5": 0.587,
+    "area_p95": 0.829,
+    "flips": 0,
+    "nonaffine": 0.0078
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.344,
+    "aniso_max": 1.372,
+    "area_p5": 1.047,
+    "area_p95": 1.342,
+    "flips": 0,
+    "nonaffine": 0.012
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.841,
+    "aniso_max": 2.027,
+    "area_p5": 0.545,
+    "area_p95": 0.841,
+    "flips": 0,
+    "nonaffine": 0.0119
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.177,
+    "aniso_max": 1.184,
+    "area_p5": 1.082,
+    "area_p95": 1.177,
+    "flips": 0,
+    "nonaffine": 0.0033
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.397,
+    "aniso_max": 1.417,
+    "area_p5": 0.716,
+    "area_p95": 0.812,
+    "flips": 0,
+    "nonaffine": 0.0032
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.266,
+    "aniso_max": 1.275,
+    "area_p5": 1.105,
+    "area_p95": 1.232,
+    "flips": 0,
+    "nonaffine": 0.0053
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.396,
+    "aniso_max": 1.396,
+    "area_p5": 0.731,
+    "area_p95": 0.787,
+    "flips": 0,
+    "nonaffine": 0.0022
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.379,
+    "aniso_max": 1.38,
+    "area_p5": 0.725,
+    "area_p95": 1.277,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.014,
+    "aniso_max": 1.035,
+    "area_p5": 0.989,
+    "area_p95": 1.01,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.077,
+    "aniso_max": 1.078,
+    "area_p5": 1.06,
+    "area_p95": 1.077,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.398,
+    "aniso_max": 1.401,
+    "area_p5": 0.715,
+    "area_p95": 0.742,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "eye_size_ratio": 0.727,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 80.6,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 46.4,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 38.3
+  }
+ },
+ "x+45_y+0": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.276 > 1.45",
+   "ArtMeshFace: stretch max 2.566 > 2.2",
+   "ArtMeshFace: area ratio 0.458..1.425",
+   "ArtMeshEyewhiteL: stretch p95 1.778 > 1.45",
+   "ArtMeshEyelashL: stretch p95 1.967 > 1.45",
+   "ArtMeshEyelashL: area ratio 0.509..0.819",
+   "ArtMeshIridesL: stretch p95 1.465 > 1.45",
+   "ArtMeshEyebrowL: stretch p95 1.644 > 1.45",
+   "eye L: aspect changed 45%",
+   "eyes: size ratio 0.49 < 0.55",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 39px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 53px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.276,
+    "aniso_max": 2.566,
+    "area_p5": 0.458,
+    "area_p95": 1.425,
+    "flips": 0,
+    "nonaffine": 0.0214
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.132,
+    "aniso_max": 1.142,
+    "area_p5": 0.911,
+    "area_p95": 0.951,
+    "flips": 0,
+    "nonaffine": 0.0022
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.778,
+    "aniso_max": 1.92,
+    "area_p5": 0.563,
+    "area_p95": 0.792,
+    "flips": 0,
+    "nonaffine": 0.0087
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.304,
+    "aniso_max": 1.359,
+    "area_p5": 1.049,
+    "area_p95": 1.304,
+    "flips": 0,
+    "nonaffine": 0.0082
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.967,
+    "aniso_max": 2.09,
+    "area_p5": 0.509,
+    "area_p95": 0.819,
+    "flips": 0,
+    "nonaffine": 0.0127
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.352,
+    "aniso_max": 1.404,
+    "area_p5": 1.036,
+    "area_p95": 1.348,
+    "flips": 0,
+    "nonaffine": 0.0126
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.465,
+    "aniso_max": 1.48,
+    "area_p5": 0.683,
+    "area_p95": 0.783,
+    "flips": 0,
+    "nonaffine": 0.0035
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.169,
+    "aniso_max": 1.18,
+    "area_p5": 1.067,
+    "area_p95": 1.169,
+    "flips": 0,
+    "nonaffine": 0.0033
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.644,
+    "aniso_max": 1.678,
+    "area_p5": 0.625,
+    "area_p95": 0.758,
+    "flips": 0,
+    "nonaffine": 0.0056
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.188,
+    "aniso_max": 1.189,
+    "area_p5": 1.095,
+    "area_p95": 1.153,
+    "flips": 0,
+    "nonaffine": 0.0024
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.379,
+    "aniso_max": 1.379,
+    "area_p5": 0.725,
+    "area_p95": 1.277,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.014,
+    "aniso_max": 1.062,
+    "area_p5": 0.989,
+    "area_p95": 1.011,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.394,
+    "aniso_max": 1.399,
+    "area_p5": 0.717,
+    "area_p95": 0.743,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.079,
+    "aniso_max": 1.081,
+    "area_p5": 1.063,
+    "area_p95": 1.079,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "eye_size_ratio": 0.494,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 80.6,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 38.7,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 52.7
+  }
+ },
+ "x-45_y-30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.664 > 1.45",
+   "ArtMeshFace: stretch max 3.311 > 2.2",
+   "ArtMeshFace: area ratio 0.409..1.389",
+   "ArtMeshEyewhiteR: stretch p95 1.929 > 1.45",
+   "ArtMeshEyelashR: stretch p95 2.054 > 1.45",
+   "ArtMeshEyelashR: stretch max 2.288 > 2.2",
+   "ArtMeshIridesR: stretch p95 1.525 > 1.45",
+   "ArtMeshEyebrowR: stretch p95 1.453 > 1.45",
+   "eye R: aspect changed 72%",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 54px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 51px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.664,
+    "aniso_max": 3.311,
+    "area_p5": 0.409,
+    "area_p95": 1.389,
+    "flips": 0,
+    "nonaffine": 0.0247
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.225,
+    "aniso_max": 1.234,
+    "area_p5": 0.839,
+    "area_p95": 0.893,
+    "flips": 0,
+    "nonaffine": 0.0025
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.376,
+    "aniso_max": 1.423,
+    "area_p5": 1.031,
+    "area_p95": 1.262,
+    "flips": 0,
+    "nonaffine": 0.0101
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.929,
+    "aniso_max": 2.125,
+    "area_p5": 0.566,
+    "area_p95": 0.803,
+    "flips": 0,
+    "nonaffine": 0.0095
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.433,
+    "aniso_max": 1.465,
+    "area_p5": 1.034,
+    "area_p95": 1.33,
+    "flips": 0,
+    "nonaffine": 0.0146
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 2.054,
+    "aniso_max": 2.288,
+    "area_p5": 0.556,
+    "area_p95": 0.839,
+    "flips": 0,
+    "nonaffine": 0.0145
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.232,
+    "aniso_max": 1.239,
+    "area_p5": 1.043,
+    "area_p95": 1.148,
+    "flips": 0,
+    "nonaffine": 0.004
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.525,
+    "aniso_max": 1.549,
+    "area_p5": 0.683,
+    "area_p95": 0.791,
+    "flips": 0,
+    "nonaffine": 0.0038
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.3,
+    "aniso_max": 1.314,
+    "area_p5": 1.149,
+    "area_p95": 1.283,
+    "flips": 0,
+    "nonaffine": 0.0064
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.453,
+    "aniso_max": 1.454,
+    "area_p5": 0.782,
+    "area_p95": 0.838,
+    "flips": 0,
+    "nonaffine": 0.0027
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.384,
+    "aniso_max": 1.385,
+    "area_p5": 0.723,
+    "area_p95": 1.281,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.016,
+    "aniso_max": 1.066,
+    "area_p5": 0.989,
+    "area_p95": 1.012,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.097,
+    "aniso_max": 1.098,
+    "area_p5": 1.057,
+    "area_p95": 1.085,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.428,
+    "aniso_max": 1.431,
+    "area_p5": 0.725,
+    "area_p95": 0.752,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "eye_size_ratio": 0.906,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.1,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 54.0,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 51.3
+  }
+ },
+ "x+0_y-30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.52 > 1.45",
+   "ArtMeshEarsL drifts 30px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 31px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.52,
+    "aniso_max": 1.855,
+    "area_p5": 0.687,
+    "area_p95": 1.149,
+    "flips": 0,
+    "nonaffine": 0.0149
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.112,
+    "aniso_max": 1.121,
+    "area_p5": 0.9,
+    "area_p95": 0.939,
+    "flips": 0,
+    "nonaffine": 0.0015
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.3,
+    "aniso_max": 1.333,
+    "area_p5": 0.94,
+    "area_p95": 0.987,
+    "flips": 0,
+    "nonaffine": 0.006
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.302,
+    "aniso_max": 1.345,
+    "area_p5": 0.942,
+    "area_p95": 0.99,
+    "flips": 0,
+    "nonaffine": 0.0057
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.342,
+    "aniso_max": 1.364,
+    "area_p5": 0.983,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0088
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.332,
+    "aniso_max": 1.38,
+    "area_p5": 0.982,
+    "area_p95": 1.01,
+    "flips": 0,
+    "nonaffine": 0.0087
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.196,
+    "aniso_max": 1.201,
+    "area_p5": 0.953,
+    "area_p95": 0.989,
+    "flips": 0,
+    "nonaffine": 0.0024
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.189,
+    "aniso_max": 1.195,
+    "area_p5": 0.94,
+    "area_p95": 0.988,
+    "flips": 0,
+    "nonaffine": 0.0023
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.24,
+    "aniso_max": 1.249,
+    "area_p5": 1.046,
+    "area_p95": 1.067,
+    "flips": 0,
+    "nonaffine": 0.0038
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.166,
+    "aniso_max": 1.166,
+    "area_p5": 1.04,
+    "area_p95": 1.055,
+    "flips": 0,
+    "nonaffine": 0.0016
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.004,
+    "aniso_max": 1.004,
+    "area_p5": 0.996,
+    "area_p95": 1.004,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.005,
+    "aniso_max": 1.066,
+    "area_p5": 0.997,
+    "area_p95": 1.004,
+    "flips": 0,
+    "nonaffine": 0.0002
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.042,
+    "aniso_max": 1.043,
+    "area_p5": 0.981,
+    "area_p95": 1.014,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.042,
+    "aniso_max": 1.047,
+    "area_p5": 0.982,
+    "area_p95": 1.014,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "eye_size_ratio": 0.799,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 9.1,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 29.9,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 30.5
+  }
+ },
+ "x+45_y-30": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 2.737 > 1.45",
+   "ArtMeshFace: stretch max 3.382 > 2.2",
+   "ArtMeshFace: area ratio 0.385..1.435",
+   "ArtMeshFace: bending 0.026 > 0.025",
+   "ArtMeshEyewhiteL: stretch p95 2.0 > 1.45",
+   "ArtMeshEyewhiteL: area ratio 0.542..0.776",
+   "ArtMeshEyelashL: stretch p95 2.204 > 1.45",
+   "ArtMeshEyelashL: stretch max 2.315 > 2.2",
+   "ArtMeshEyelashL: area ratio 0.516..0.817",
+   "ArtMeshIridesL: stretch p95 1.591 > 1.45",
+   "ArtMeshEyebrowL: stretch p95 1.718 > 1.45",
+   "eye L: aspect changed 71%",
+   "ArtMeshBackHair drifts 81px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 50px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 59px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 2.737,
+    "aniso_max": 3.382,
+    "area_p5": 0.385,
+    "area_p95": 1.435,
+    "flips": 0,
+    "nonaffine": 0.0255
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.232,
+    "aniso_max": 1.252,
+    "area_p5": 0.834,
+    "area_p95": 0.883,
+    "flips": 0,
+    "nonaffine": 0.0026
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 2.0,
+    "aniso_max": 2.163,
+    "area_p5": 0.542,
+    "area_p95": 0.776,
+    "flips": 0,
+    "nonaffine": 0.0104
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.386,
+    "aniso_max": 1.448,
+    "area_p5": 1.015,
+    "area_p95": 1.269,
+    "flips": 0,
+    "nonaffine": 0.0098
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 2.204,
+    "aniso_max": 2.315,
+    "area_p5": 0.516,
+    "area_p95": 0.817,
+    "flips": 0,
+    "nonaffine": 0.0151
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.43,
+    "aniso_max": 1.495,
+    "area_p5": 1.022,
+    "area_p95": 1.339,
+    "flips": 0,
+    "nonaffine": 0.015
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.591,
+    "aniso_max": 1.608,
+    "area_p5": 0.66,
+    "area_p95": 0.762,
+    "flips": 0,
+    "nonaffine": 0.0041
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.223,
+    "aniso_max": 1.24,
+    "area_p5": 1.035,
+    "area_p95": 1.137,
+    "flips": 0,
+    "nonaffine": 0.004
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.718,
+    "aniso_max": 1.754,
+    "area_p5": 0.694,
+    "area_p95": 0.811,
+    "flips": 0,
+    "nonaffine": 0.0066
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.195,
+    "aniso_max": 1.197,
+    "area_p5": 1.136,
+    "area_p95": 1.19,
+    "flips": 0,
+    "nonaffine": 0.0028
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.384,
+    "aniso_max": 1.385,
+    "area_p5": 0.723,
+    "area_p95": 1.281,
+    "flips": 0,
+    "nonaffine": 0.0224
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.016,
+    "aniso_max": 1.093,
+    "area_p5": 0.989,
+    "area_p95": 1.012,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.425,
+    "aniso_max": 1.429,
+    "area_p5": 0.726,
+    "area_p95": 0.752,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.097,
+    "aniso_max": 1.101,
+    "area_p5": 1.06,
+    "area_p95": 1.088,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "eye_size_ratio": 0.589,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 81.0,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 50.4,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 58.9
+  }
+ },
+ "x-22_y+15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.452 > 1.45",
+   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 27px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 25px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.452,
+    "aniso_max": 1.564,
+    "area_p5": 0.701,
+    "area_p95": 1.205,
+    "flips": 0,
+    "nonaffine": 0.0123
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.057,
+    "aniso_max": 1.063,
+    "area_p5": 0.965,
+    "area_p95": 0.989,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.194,
+    "aniso_max": 1.218,
+    "area_p5": 1.018,
+    "area_p95": 1.13,
+    "flips": 0,
+    "nonaffine": 0.005
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.305,
+    "aniso_max": 1.362,
+    "area_p5": 0.778,
+    "area_p95": 0.901,
+    "flips": 0,
+    "nonaffine": 0.0047
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.229,
+    "aniso_max": 1.249,
+    "area_p5": 0.998,
+    "area_p95": 1.143,
+    "flips": 0,
+    "nonaffine": 0.0073
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.358,
+    "aniso_max": 1.414,
+    "area_p5": 0.747,
+    "area_p95": 0.899,
+    "flips": 0,
+    "nonaffine": 0.0072
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.122,
+    "aniso_max": 1.126,
+    "area_p5": 1.025,
+    "area_p95": 1.073,
+    "flips": 0,
+    "nonaffine": 0.002
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.19,
+    "aniso_max": 1.195,
+    "area_p5": 0.844,
+    "area_p95": 0.894,
+    "flips": 0,
+    "nonaffine": 0.0019
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.185,
+    "aniso_max": 1.19,
+    "area_p5": 1.001,
+    "area_p95": 1.059,
+    "flips": 0,
+    "nonaffine": 0.0032
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.199,
+    "aniso_max": 1.201,
+    "area_p5": 0.82,
+    "area_p95": 0.845,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.161,
+    "aniso_max": 1.162,
+    "area_p5": 0.861,
+    "area_p95": 1.14,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.009,
+    "aniso_max": 1.045,
+    "area_p5": 0.994,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.046,
+    "aniso_max": 1.047,
+    "area_p5": 1.025,
+    "area_p95": 1.045,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.162,
+    "aniso_max": 1.166,
+    "area_p5": 0.85,
+    "area_p95": 0.876,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "eye_size_ratio": 0.954,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 27.1,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 24.6
+  }
+ },
+ "x+0_y+15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshEarsL drifts 15px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 15px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.2,
+    "aniso_max": 1.23,
+    "area_p5": 0.898,
+    "area_p95": 1.12,
+    "flips": 0,
+    "nonaffine": 0.0071
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.019,
+    "aniso_max": 1.023,
+    "area_p5": 0.999,
+    "area_p95": 1.019,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.135,
+    "aniso_max": 1.149,
+    "area_p5": 0.977,
+    "area_p95": 1.0,
+    "flips": 0,
+    "nonaffine": 0.0029
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.134,
+    "aniso_max": 1.155,
+    "area_p5": 0.975,
+    "area_p95": 1.0,
+    "flips": 0,
+    "nonaffine": 0.0027
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.156,
+    "aniso_max": 1.167,
+    "area_p5": 0.967,
+    "area_p95": 0.979,
+    "flips": 0,
+    "nonaffine": 0.0042
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.154,
+    "aniso_max": 1.174,
+    "area_p5": 0.966,
+    "area_p95": 0.978,
+    "flips": 0,
+    "nonaffine": 0.0042
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.089,
+    "aniso_max": 1.092,
+    "area_p5": 0.975,
+    "area_p95": 0.993,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.084,
+    "aniso_max": 1.087,
+    "area_p5": 0.976,
+    "area_p95": 1.0,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.129,
+    "aniso_max": 1.137,
+    "area_p5": 0.939,
+    "area_p95": 0.949,
+    "flips": 0,
+    "nonaffine": 0.0018
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.095,
+    "aniso_max": 1.095,
+    "area_p5": 0.944,
+    "area_p95": 0.95,
+    "flips": 0,
+    "nonaffine": 0.0008
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.002,
+    "aniso_max": 1.002,
+    "area_p5": 0.998,
+    "area_p95": 1.002,
+    "flips": 0,
+    "nonaffine": 0.0001
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.004,
+    "aniso_max": 1.031,
+    "area_p5": 0.998,
+    "area_p95": 1.002,
+    "flips": 0,
+    "nonaffine": 0.0001
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.021,
+    "aniso_max": 1.022,
+    "area_p5": 0.991,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0005
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.022,
+    "aniso_max": 1.023,
+    "area_p5": 0.991,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0005
+   },
+   "eye_size_ratio": 0.849,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 4.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 14.7,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 15.0
+  }
+ },
+ "x+22_y+15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.458 > 1.45",
+   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 24px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.458,
+    "aniso_max": 1.568,
+    "area_p5": 0.702,
+    "area_p95": 1.212,
+    "flips": 0,
+    "nonaffine": 0.0127
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.06,
+    "aniso_max": 1.069,
+    "area_p5": 0.96,
+    "area_p95": 0.986,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.328,
+    "aniso_max": 1.37,
+    "area_p5": 0.764,
+    "area_p95": 0.886,
+    "flips": 0,
+    "nonaffine": 0.0052
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.195,
+    "aniso_max": 1.233,
+    "area_p5": 1.01,
+    "area_p95": 1.134,
+    "flips": 0,
+    "nonaffine": 0.0049
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.389,
+    "aniso_max": 1.422,
+    "area_p5": 0.73,
+    "area_p95": 0.887,
+    "flips": 0,
+    "nonaffine": 0.0075
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.23,
+    "aniso_max": 1.26,
+    "area_p5": 0.993,
+    "area_p95": 1.143,
+    "flips": 0,
+    "nonaffine": 0.0075
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.213,
+    "aniso_max": 1.22,
+    "area_p5": 0.826,
+    "area_p95": 0.88,
+    "flips": 0,
+    "nonaffine": 0.0021
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.117,
+    "aniso_max": 1.123,
+    "area_p5": 1.016,
+    "area_p95": 1.074,
+    "flips": 0,
+    "nonaffine": 0.002
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.297,
+    "aniso_max": 1.31,
+    "area_p5": 0.758,
+    "area_p95": 0.83,
+    "flips": 0,
+    "nonaffine": 0.0033
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.132,
+    "aniso_max": 1.132,
+    "area_p5": 0.996,
+    "area_p95": 1.027,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.161,
+    "aniso_max": 1.162,
+    "area_p5": 0.861,
+    "area_p95": 1.14,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.009,
+    "aniso_max": 1.063,
+    "area_p5": 0.993,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.161,
+    "aniso_max": 1.165,
+    "area_p5": 0.851,
+    "area_p95": 0.876,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.046,
+    "aniso_max": 1.048,
+    "area_p5": 1.025,
+    "area_p95": 1.046,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "eye_size_ratio": 0.678,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 24.5,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 29.7
+  }
+ },
+ "x-22_y+0": {
+  "ok": false,
+  "fails": [
+   "ArtMeshBackHair drifts 40px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 23px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 19px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.385,
+    "aniso_max": 1.436,
+    "area_p5": 0.736,
+    "area_p95": 1.195,
+    "flips": 0,
+    "nonaffine": 0.0102
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.06,
+    "aniso_max": 1.063,
+    "area_p5": 0.961,
+    "area_p95": 0.981,
+    "flips": 0,
+    "nonaffine": 0.001
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.146,
+    "aniso_max": 1.167,
+    "area_p5": 1.037,
+    "area_p95": 1.145,
+    "flips": 0,
+    "nonaffine": 0.0041
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.26,
+    "aniso_max": 1.301,
+    "area_p5": 0.793,
+    "area_p95": 0.914,
+    "flips": 0,
+    "nonaffine": 0.0039
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.172,
+    "aniso_max": 1.186,
+    "area_p5": 1.024,
+    "area_p95": 1.171,
+    "flips": 0,
+    "nonaffine": 0.006
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.297,
+    "aniso_max": 1.34,
+    "area_p5": 0.772,
+    "area_p95": 0.921,
+    "flips": 0,
+    "nonaffine": 0.006
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.089,
+    "aniso_max": 1.092,
+    "area_p5": 1.041,
+    "area_p95": 1.089,
+    "flips": 0,
+    "nonaffine": 0.0016
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.166,
+    "aniso_max": 1.171,
+    "area_p5": 0.858,
+    "area_p95": 0.906,
+    "flips": 0,
+    "nonaffine": 0.0016
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.132,
+    "aniso_max": 1.136,
+    "area_p5": 1.053,
+    "area_p95": 1.116,
+    "flips": 0,
+    "nonaffine": 0.0026
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.166,
+    "aniso_max": 1.168,
+    "area_p5": 0.866,
+    "area_p95": 0.893,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.16,
+    "aniso_max": 1.16,
+    "area_p5": 0.862,
+    "area_p95": 1.139,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.008,
+    "aniso_max": 1.033,
+    "area_p5": 0.994,
+    "area_p95": 1.005,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.038,
+    "aniso_max": 1.039,
+    "area_p5": 1.03,
+    "area_p95": 1.038,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.166,
+    "aniso_max": 1.167,
+    "area_p5": 0.858,
+    "area_p95": 0.872,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "eye_size_ratio": 0.941,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.3,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 23.2,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 19.2
+  }
+ },
+ "x+22_y+0": {
+  "ok": false,
+  "fails": [
+   "ArtMeshBackHair drifts 40px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 19px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 26px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.395,
+    "aniso_max": 1.45,
+    "area_p5": 0.729,
+    "area_p95": 1.212,
+    "flips": 0,
+    "nonaffine": 0.0107
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.062,
+    "aniso_max": 1.068,
+    "area_p5": 0.957,
+    "area_p95": 0.976,
+    "flips": 0,
+    "nonaffine": 0.0011
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.281,
+    "aniso_max": 1.314,
+    "area_p5": 0.781,
+    "area_p95": 0.896,
+    "flips": 0,
+    "nonaffine": 0.0044
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.15,
+    "aniso_max": 1.18,
+    "area_p5": 1.025,
+    "area_p95": 1.15,
+    "flips": 0,
+    "nonaffine": 0.0041
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.326,
+    "aniso_max": 1.349,
+    "area_p5": 0.755,
+    "area_p95": 0.91,
+    "flips": 0,
+    "nonaffine": 0.0063
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.176,
+    "aniso_max": 1.2,
+    "area_p5": 1.018,
+    "area_p95": 1.174,
+    "flips": 0,
+    "nonaffine": 0.0063
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.188,
+    "aniso_max": 1.193,
+    "area_p5": 0.841,
+    "area_p95": 0.891,
+    "flips": 0,
+    "nonaffine": 0.0017
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.087,
+    "aniso_max": 1.091,
+    "area_p5": 1.033,
+    "area_p95": 1.084,
+    "flips": 0,
+    "nonaffine": 0.0017
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.245,
+    "aniso_max": 1.255,
+    "area_p5": 0.813,
+    "area_p95": 0.879,
+    "flips": 0,
+    "nonaffine": 0.0028
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.094,
+    "aniso_max": 1.095,
+    "area_p5": 1.047,
+    "area_p95": 1.077,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.16,
+    "aniso_max": 1.16,
+    "area_p5": 0.862,
+    "area_p95": 1.139,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.008,
+    "aniso_max": 1.063,
+    "area_p5": 0.994,
+    "area_p95": 1.005,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.164,
+    "aniso_max": 1.167,
+    "area_p5": 0.859,
+    "area_p95": 0.871,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.04,
+    "aniso_max": 1.042,
+    "area_p5": 1.031,
+    "area_p95": 1.04,
+    "flips": 0,
+    "nonaffine": 0.0003
+   },
+   "eye_size_ratio": 0.653,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.3,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 19.3,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 26.3
+  }
+ },
+ "x-22_y-15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.481 > 1.45",
+   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 27px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 25px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.481,
+    "aniso_max": 1.538,
+    "area_p5": 0.704,
+    "area_p95": 1.197,
+    "flips": 0,
+    "nonaffine": 0.0125
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.079,
+    "aniso_max": 1.082,
+    "area_p5": 0.92,
+    "area_p95": 0.948,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.196,
+    "aniso_max": 1.223,
+    "area_p5": 1.017,
+    "area_p95": 1.134,
+    "flips": 0,
+    "nonaffine": 0.0051
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.311,
+    "aniso_max": 1.361,
+    "area_p5": 0.78,
+    "area_p95": 0.901,
+    "flips": 0,
+    "nonaffine": 0.0048
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.229,
+    "aniso_max": 1.245,
+    "area_p5": 1.016,
+    "area_p95": 1.167,
+    "flips": 0,
+    "nonaffine": 0.0074
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.352,
+    "aniso_max": 1.407,
+    "area_p5": 0.774,
+    "area_p95": 0.918,
+    "flips": 0,
+    "nonaffine": 0.0073
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.125,
+    "aniso_max": 1.13,
+    "area_p5": 1.023,
+    "area_p95": 1.076,
+    "flips": 0,
+    "nonaffine": 0.002
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.193,
+    "aniso_max": 1.201,
+    "area_p5": 0.84,
+    "area_p95": 0.894,
+    "flips": 0,
+    "nonaffine": 0.0019
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.169,
+    "aniso_max": 1.176,
+    "area_p5": 1.074,
+    "area_p95": 1.143,
+    "flips": 0,
+    "nonaffine": 0.0032
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.186,
+    "aniso_max": 1.187,
+    "area_p5": 0.888,
+    "area_p95": 0.915,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.161,
+    "aniso_max": 1.162,
+    "area_p5": 0.861,
+    "area_p95": 1.14,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.009,
+    "aniso_max": 1.045,
+    "area_p5": 0.994,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.048,
+    "aniso_max": 1.049,
+    "area_p5": 1.028,
+    "area_p95": 1.042,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.176,
+    "aniso_max": 1.177,
+    "area_p5": 0.862,
+    "area_p95": 0.877,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "eye_size_ratio": 0.987,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 27.3,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 24.9
+  }
+ },
+ "x+0_y-15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshEarsL drifts 15px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 15px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.217,
+    "aniso_max": 1.3,
+    "area_p5": 0.844,
+    "area_p95": 1.075,
+    "flips": 0,
+    "nonaffine": 0.0074
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.053,
+    "aniso_max": 1.055,
+    "area_p5": 0.95,
+    "area_p95": 0.968,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.138,
+    "aniso_max": 1.155,
+    "area_p5": 0.97,
+    "area_p95": 0.994,
+    "flips": 0,
+    "nonaffine": 0.003
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.14,
+    "aniso_max": 1.16,
+    "area_p5": 0.972,
+    "area_p95": 0.995,
+    "flips": 0,
+    "nonaffine": 0.0029
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.159,
+    "aniso_max": 1.164,
+    "area_p5": 0.991,
+    "area_p95": 1.004,
+    "flips": 0,
+    "nonaffine": 0.0044
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.154,
+    "aniso_max": 1.178,
+    "area_p5": 0.99,
+    "area_p95": 1.007,
+    "flips": 0,
+    "nonaffine": 0.0044
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.093,
+    "aniso_max": 1.096,
+    "area_p5": 0.976,
+    "area_p95": 0.994,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.09,
+    "aniso_max": 1.093,
+    "area_p5": 0.972,
+    "area_p95": 0.994,
+    "flips": 0,
+    "nonaffine": 0.0012
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.116,
+    "aniso_max": 1.117,
+    "area_p5": 1.023,
+    "area_p95": 1.035,
+    "flips": 0,
+    "nonaffine": 0.0019
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.08,
+    "aniso_max": 1.081,
+    "area_p5": 1.02,
+    "area_p95": 1.026,
+    "flips": 0,
+    "nonaffine": 0.0008
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.002,
+    "aniso_max": 1.002,
+    "area_p5": 0.998,
+    "area_p95": 1.002,
+    "flips": 0,
+    "nonaffine": 0.0001
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.004,
+    "aniso_max": 1.031,
+    "area_p5": 0.998,
+    "area_p95": 1.002,
+    "flips": 0,
+    "nonaffine": 0.0001
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.021,
+    "aniso_max": 1.023,
+    "area_p5": 0.991,
+    "area_p95": 1.007,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.021,
+    "aniso_max": 1.023,
+    "area_p5": 0.991,
+    "area_p95": 1.007,
+    "flips": 0,
+    "nonaffine": 0.0006
+   },
+   "eye_size_ratio": 0.829,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 4.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 14.9,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 15.3
+  }
+ },
+ "x+22_y-15": {
+  "ok": false,
+  "fails": [
+   "ArtMeshFace: stretch p95 1.484 > 1.45",
+   "ArtMeshBackHair drifts 41px from ArtMeshFrontHair",
+   "ArtMeshEarsL drifts 25px from ArtMeshFrontHair",
+   "ArtMeshEarsR drifts 30px from ArtMeshFrontHair"
+  ],
+  "parts": {
+   "ArtMeshFace": {
+    "aniso_p95": 1.484,
+    "aniso_max": 1.555,
+    "area_p5": 0.689,
+    "area_p95": 1.218,
+    "flips": 0,
+    "nonaffine": 0.0129
+   },
+   "ArtMeshNose": {
+    "aniso_p95": 1.081,
+    "aniso_max": 1.09,
+    "area_p5": 0.918,
+    "area_p95": 0.942,
+    "flips": 0,
+    "nonaffine": 0.0013
+   },
+   "ArtMeshEyewhiteL": {
+    "aniso_p95": 1.331,
+    "aniso_max": 1.37,
+    "area_p5": 0.767,
+    "area_p95": 0.886,
+    "flips": 0,
+    "nonaffine": 0.0053
+   },
+   "ArtMeshEyewhiteR": {
+    "aniso_p95": 1.201,
+    "aniso_max": 1.235,
+    "area_p5": 1.01,
+    "area_p95": 1.135,
+    "flips": 0,
+    "nonaffine": 0.005
+   },
+   "ArtMeshEyelashL": {
+    "aniso_p95": 1.382,
+    "aniso_max": 1.409,
+    "area_p5": 0.754,
+    "area_p95": 0.907,
+    "flips": 0,
+    "nonaffine": 0.0076
+   },
+   "ArtMeshEyelashR": {
+    "aniso_p95": 1.229,
+    "aniso_max": 1.26,
+    "area_p5": 1.011,
+    "area_p95": 1.172,
+    "flips": 0,
+    "nonaffine": 0.0076
+   },
+   "ArtMeshIridesL": {
+    "aniso_p95": 1.216,
+    "aniso_max": 1.221,
+    "area_p5": 0.827,
+    "area_p95": 0.879,
+    "flips": 0,
+    "nonaffine": 0.0021
+   },
+   "ArtMeshIridesR": {
+    "aniso_p95": 1.12,
+    "aniso_max": 1.127,
+    "area_p5": 1.018,
+    "area_p95": 1.069,
+    "flips": 0,
+    "nonaffine": 0.002
+   },
+   "ArtMeshEyebrowL": {
+    "aniso_p95": 1.275,
+    "aniso_max": 1.284,
+    "area_p5": 0.842,
+    "area_p95": 0.902,
+    "flips": 0,
+    "nonaffine": 0.0033
+   },
+   "ArtMeshEyebrowR": {
+    "aniso_p95": 1.12,
+    "aniso_max": 1.122,
+    "area_p5": 1.067,
+    "area_p95": 1.094,
+    "flips": 0,
+    "nonaffine": 0.0014
+   },
+   "ArtMeshFrontHair": {
+    "aniso_p95": 1.161,
+    "aniso_max": 1.162,
+    "area_p5": 0.861,
+    "area_p95": 1.14,
+    "flips": 0,
+    "nonaffine": 0.0112
+   },
+   "ArtMeshBackHair": {
+    "aniso_p95": 1.009,
+    "aniso_max": 1.063,
+    "area_p5": 0.994,
+    "area_p95": 1.006,
+    "flips": 0,
+    "nonaffine": 0.0004
+   },
+   "ArtMeshEarsL": {
+    "aniso_p95": 1.175,
+    "aniso_max": 1.177,
+    "area_p5": 0.862,
+    "area_p95": 0.877,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "ArtMeshEarsR": {
+    "aniso_p95": 1.049,
+    "aniso_max": 1.055,
+    "area_p5": 1.03,
+    "area_p95": 1.044,
+    "flips": 0,
+    "nonaffine": 0.0007
+   },
+   "eye_size_ratio": 0.671,
+   "separation ArtMeshBackHair/ArtMeshFrontHair": 40.5,
+   "separation ArtMeshEarsL/ArtMeshFrontHair": 24.8,
+   "separation ArtMeshEarsR/ArtMeshFrontHair": 29.9
+  }
+ }
+}
