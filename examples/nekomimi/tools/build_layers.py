@@ -8,7 +8,7 @@ import sys
 import numpy as np
 from psd_tools.compression import Compression, compress
 import cv2
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 SRC_PATH = sys.argv[1] if len(sys.argv) > 1 else "src.png"
 OUT_PSD = sys.argv[2] if len(sys.argv) > 2 else "character.psd"
@@ -72,7 +72,31 @@ skin_comp = lab == lab[620, 900]
 # grow skin over the thin anti-aliased edge that the line mask ate, but never into dark lines
 skin = skin_comp | (dilate(skin_comp, 2) & (LUM > 200) & (R - B > 8))
 
-FACE_POLY = poly([(690, 430), (715, 360), (790, 322), (900, 312), (1010, 322), (1085, 360), (1110, 430), (1110, 640), (1040, 700), (900, 776), (765, 695), (690, 640)])
+
+
+def spline(points, samples=12):
+    """Open Catmull-Rom curve through `points` (endpoints included)."""
+    p = np.array(points, float)
+    p = np.vstack([p[0], p, p[-1]])
+    out = []
+    for i in range(1, len(p) - 2):
+        p0, p1, p2, p3 = p[i - 1], p[i], p[i + 1], p[i + 2]
+        for t in np.linspace(0, 1, samples, endpoint=False):
+            t2, t3 = t * t, t * t * t
+            out.append(0.5 * (2 * p1 + (p2 - p0) * t + (2 * p0 - 5 * p1 + 4 * p2 - p3) * t2
+                              + (3 * p1 - p0 - 3 * p2 + p3) * t3))
+    out.append(p[-2])
+    return [tuple(map(float, q)) for q in out]
+
+
+# Face outline: the chin and the visible jaw (x 770..1030) are measured from the lineart; the cheeks and
+# forehead hidden under the hair are extrapolated to a symmetric anime face (eye corners at x 697 / 1104).
+CHIN = (900, 771)
+FACE_OUTLINE = spline([CHIN, (840, 739), (780, 698), (742, 668), (714, 630), (697, 580), (689, 520), (689, 460),
+                       (699, 405), (728, 360), (790, 328), (900, 315), (1010, 328), (1072, 360), (1101, 405),
+                       (1111, 460), (1111, 520), (1103, 580), (1086, 630), (1058, 668), (1020, 698), (960, 739),
+                       CHIN])
+FACE_POLY = poly(FACE_OUTLINE)
 face_skin = skin & FACE_POLY
 neck_box = poly([(805, 690), (1000, 690), (1000, 770), (805, 770)])
 neck_skin = neck_box & ~FACE_POLY & (LUM > 150) & (R - B > 8) & OPAQUE
@@ -167,16 +191,40 @@ mouth_pil.paste(big.resize((MOUTH_BOX[2] - MOUTH_BOX[0], MOUTH_BOX[3] - MOUTH_BO
 mouth_layer = np.array(mouth_pil)
 
 # ---------------------------------------------------------------- face / neck
-body_region_pre = OPAQUE & (((YY >= 745) & (XX >= 770) & (XX <= 1030)) | (YY >= 880))
-face_mask = (FACE_POLY & ~skin) | face_skin | face_holes
-face_mask &= FACE_POLY
+# colour: keep only the core of the visible skin (the eroded component drops anti-aliased hair edges),
+# repaint everything else inside the outline from it on a half-scale crop so it stays smooth
+skin_core = (cv2.erode(skin_comp.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0) & FACE_POLY & ~face_holes
+fy0, fy1, fx0, fx1 = 300, 790, 670, 1130
+crop = RGB[fy0:fy1, fx0:fx1].astype(np.uint8).copy()
+crop_hole = (FACE_POLY & ~skin_core)[fy0:fy1, fx0:fx1]
+crop[crop_hole] = skin_med
+small = cv2.resize(crop, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
+small_hole = cv2.resize(crop_hole.astype(np.uint8) * 255, (small.shape[1], small.shape[0])) > 0
+small = cv2.inpaint(small, small_hole.astype(np.uint8) * 255, 12, cv2.INPAINT_TELEA)
+filled = cv2.GaussianBlur(cv2.resize(small, (crop.shape[1], crop.shape[0]), interpolation=cv2.INTER_CUBIC), (0, 0), 3)
 face_rgb = RGB.copy()
-hidden = FACE_POLY & ~face_skin
-face_rgb[hidden] = skin_med
-face_rgb = inpaint(face_rgb, face_holes & face_skin | face_holes, radius=4)
-face_rgb[face_skin & ~face_holes] = RGB[face_skin & ~face_holes]
-below_jaw = FACE_POLY & (YY > 640) & ~face_skin & ~face_holes & ((LUM > 150) | (ALPHA < 128)) & ~(dilate(face_skin, 3) & (LUM <= 215))
-face_layer = layer(face_rgb, FACE_POLY & ~below_jaw & ~(body_region_pre & ~face_skin & (LUM < 120)))
+face_rgb[fy0:fy1, fx0:fx1][crop_hole] = filled[crop_hole]
+# soften the seam between kept skin and repainted skin
+seam = dilate(skin_core, 3) & ~cv2.erode(skin_core.astype(np.uint8), np.ones((5, 5), np.uint8)).astype(bool)
+blur = cv2.GaussianBlur(face_rgb.astype(np.float32), (0, 0), 1.5).astype(int)
+face_rgb[seam & FACE_POLY] = blur[seam & FACE_POLY]
+
+# outline: a thin contour stroke on the lower half (so the cheek edge reads as a face when it slides out
+# from under the hair), with the original jaw lineart pasted over it where it is visible
+JAW_LINE = (126, 88, 84)
+stroke = Image.new("L", (W * 4, H * 4), 0)
+# the outline starts and ends at the chin, so y >= 470 gives the right cheek + jaw and the left cheek + jaw
+# as the two ends of the list; draw them as two separate strokes
+half = len(FACE_OUTLINE) // 2
+for run in (FACE_OUTLINE[:half], FACE_OUTLINE[half:]):
+    ImageDraw.Draw(stroke).line([(x * 4, y * 4) for x, y in run if y >= 470], fill=255, width=10, joint="curve")
+stroke = np.array(stroke.resize((W, H), Image.LANCZOS)).astype(float) / 255
+jaw_visible = dilate(poly(FACE_OUTLINE), 1) & ~cv2.erode(FACE_POLY.astype(np.uint8), np.ones((9, 9), np.uint8)).astype(bool) \
+    & (YY > 660) & (XX > 772) & (XX < 1028) & (LUM < 215)
+face_rgb = (face_rgb * (1 - stroke[..., None]) + np.array(JAW_LINE) * stroke[..., None]).astype(int)
+face_rgb[jaw_visible] = RGB[jaw_visible]
+face_alpha = np.array(Image.fromarray(FACE_POLY.astype(np.uint8) * 255).filter(ImageFilter.GaussianBlur(0.6)))
+face_layer = layer(face_rgb, dilate(FACE_POLY, 1), face_alpha)
 
 neck_med = np.median(RGB[neck_skin], axis=0) if neck_skin.any() else skin_med
 neck_poly = poly([(815, 620), (995, 620), (998, 775), (812, 775)])
@@ -208,7 +256,9 @@ PONY_POLY = poly([(650, 683), (550, 792), (600, 833), (500, 897), (583, 917), (6
                   (708, 1183), (735, 1270), (767, 1183), (783, 1117), (800, 1050), (790, 983), (785, 900),
                   (790, 800), (800, 717), (767, 683)])
 neutral = (np.max(RGB, -1) - np.min(RGB, -1)) < 7
-pony = PONY_POLY & OPAQUE & (YY >= 695) & ~(neutral & (ALPHA > 250)) & ~neck_skin
+# neutral (grey-white) pixels are the shirt only where the shirt can be; above it they are hair highlights
+shirt_zone = ((YY >= 745) & (XX >= 770) & (XX <= 1030)) | (YY >= 880)
+pony = PONY_POLY & OPAQUE & (YY >= 695) & ~(neutral & (ALPHA > 250) & shirt_zone) & ~neck_skin
 pony = cv2.morphologyEx(pony.astype(np.uint8), cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) > 0
 
 body_region = OPAQUE & (((YY >= 745) & (XX >= 770) & (XX <= 1030)) | (YY >= 880))
