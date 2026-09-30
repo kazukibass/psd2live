@@ -1,0 +1,50 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "nekomimi.moc3",
+		"Textures": [
+			"nekomimi.4096/texture_00.png"
+		],
+		"Physics": "nekomimi.physics3.json",
+		"DisplayInfo": "nekomimi.cdi3.json",
+		"Motions": {
+			"Idle": [
+				{
+					"File": "nekomimi.idle.motion3.json"
+				}
+			],
+			"Blink": [
+				{
+					"File": "nekomimi.blink.motion3.json"
+				}
+			],
+			"Nod": [
+				{
+					"File": "nekomimi.nod.motion3.json"
+				}
+			],
+			"Shake": [
+				{
+					"File": "nekomimi.shake.motion3.json"
+				}
+			]
+		}
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": [
+				"ParamMouthOpenY"
+			]
+		}
+	]
+}
