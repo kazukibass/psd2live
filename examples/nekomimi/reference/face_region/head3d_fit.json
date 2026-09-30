@@ -1,0 +1,134 @@
+{
+ "shape": {
+  "cx": 901.545,
+  "cy": 505.524,
+  "rx": 257.481,
+  "rz_ratio": 1.0,
+  "ry_ratio": 1.156,
+  "n": 2.0,
+  "py": 754.248,
+  "pz": -149.775,
+  "rz": 257.481,
+  "ry": 297.571
+ },
+ "angles": {
+  "yaw_left": -20.0,
+  "yaw_right": 21.11,
+  "pitch_up": 13.84,
+  "pitch_down": -14.45
+ },
+ "directions": {
+  "up-left": {
+   "yaw": -20.0,
+   "pitch": 13.8,
+   "shift": [
+    7.4,
+    8.0
+   ],
+   "iou": 0.612,
+   "midline_share_drawn": 0.188,
+   "midline_share_model": 0.412,
+   "stretch_p95": 2.58,
+   "stretch_max": 3.73,
+   "flips": 0
+  },
+  "up": {
+   "yaw": 0.0,
+   "pitch": 13.8,
+   "shift": [
+    2.7,
+    8.0
+   ],
+   "iou": 0.739,
+   "midline_share_drawn": 0.507,
+   "midline_share_model": 0.498,
+   "stretch_p95": 1.46,
+   "stretch_max": 1.54,
+   "flips": 0
+  },
+  "up-right": {
+   "yaw": 21.1,
+   "pitch": 13.8,
+   "shift": [
+    -8.0,
+    8.0
+   ],
+   "iou": 0.571,
+   "midline_share_drawn": 0.818,
+   "midline_share_model": 0.595,
+   "stretch_p95": 2.65,
+   "stretch_max": 3.81,
+   "flips": 0
+  },
+  "left": {
+   "yaw": -20.0,
+   "pitch": 0.0,
+   "shift": [
+    8.0,
+    -7.8
+   ],
+   "iou": 0.643,
+   "midline_share_drawn": 0.186,
+   "midline_share_model": 0.402,
+   "stretch_p95": 2.22,
+   "stretch_max": 2.5,
+   "flips": 0
+  },
+  "right": {
+   "yaw": 21.1,
+   "pitch": 0.0,
+   "shift": [
+    -8.0,
+    -7.9
+   ],
+   "iou": 0.673,
+   "midline_share_drawn": 0.773,
+   "midline_share_model": 0.603,
+   "stretch_p95": 2.28,
+   "stretch_max": 2.56,
+   "flips": 0
+  },
+  "down-left": {
+   "yaw": -20.0,
+   "pitch": -14.4,
+   "shift": [
+    4.1,
+    -8.0
+   ],
+   "iou": 0.743,
+   "midline_share_drawn": 0.203,
+   "midline_share_model": 0.394,
+   "stretch_p95": 2.66,
+   "stretch_max": 3.31,
+   "flips": 0
+  },
+  "down": {
+   "yaw": 0.0,
+   "pitch": -14.4,
+   "shift": [
+    2.2,
+    -8.0
+   ],
+   "iou": 0.833,
+   "midline_share_drawn": 0.517,
+   "midline_share_model": 0.498,
+   "stretch_p95": 1.52,
+   "stretch_max": 1.85,
+   "flips": 0
+  },
+  "down-right": {
+   "yaw": 21.1,
+   "pitch": -14.4,
+   "shift": [
+    -8.0,
+    -8.0
+   ],
+   "iou": 0.764,
+   "midline_share_drawn": 0.789,
+   "midline_share_model": 0.612,
+   "stretch_p95": 2.74,
+   "stretch_max": 3.37,
+   "flips": 0
+  }
+ }
+}
