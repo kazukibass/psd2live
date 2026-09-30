@@ -227,9 +227,17 @@ face_alpha = np.array(Image.fromarray(FACE_POLY.astype(np.uint8) * 255).filter(I
 face_layer = layer(face_rgb, dilate(FACE_POLY, 1), face_alpha)
 
 neck_med = np.median(RGB[neck_skin], axis=0) if neck_skin.any() else skin_med
-neck_poly = poly([(815, 620), (995, 620), (998, 775), (812, 775)])
-neck_rgb = RGB.copy()
-neck_rgb[neck_poly & ~neck_skin] = neck_med
+# neck + underside of the jaw: hidden behind the face at rest, revealed when the head looks up (the
+# reference sheet shows a wide, shaded jaw underside there), so it is as wide as the jaw at the top
+NECK_OUTLINE = spline([(812, 776), (814, 730), (790, 690), (752, 640), (760, 600), (830, 585), (900, 582),
+                       (970, 585), (1040, 600), (1048, 640), (1010, 690), (996, 730), (998, 776)])
+neck_poly = poly(NECK_OUTLINE)
+under_jaw = np.array([150, 120, 125])  # shadow tint, multiplied into the skin tone
+shade = np.clip((725 - YY) / 110.0, 0, 1)[..., None]  # 0 on the neck, 1 up under the jaw
+neck_rgb = (neck_med * (1 - 0.18 * shade) - (255 - under_jaw) * 0.05 * shade).astype(int)
+neck_rgb = np.broadcast_to(neck_rgb, RGB.shape).copy()
+neck_rgb = cv2.GaussianBlur(neck_rgb.astype(np.float32), (0, 0), 2).astype(int)
+neck_rgb[neck_skin] = RGB[neck_skin]
 neck_layer = layer(neck_rgb, neck_poly)
 
 # ---------------------------------------------------------------- ears
